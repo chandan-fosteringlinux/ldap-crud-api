@@ -1,0 +1,34 @@
+
+#transactionCategory database
+dn: dc=transactionCategory,dc=com
+objectClass: domain
+objectClass: top
+dc:transactionCategory
+description: transactionCategory
+
+dn: cn=Directory Manager,dc=transactionCategory,dc=com
+objectClass: person
+cn: Directory Manager
+sn: Manager
+userPassword: redhat
+
+#transactioncategory organizational unit
+dn: ou=tranCategory,dc=transactionCategory,dc=com
+objectClass: organizationalUnit
+objectClass: top
+ou: tranCategory
+description: tranCategory
+
+#transactionCategory entry
+dn: transactionGroupId=TG12345,ou=tranCategory,dc=transactionCategory,dc=com
+objectClass: transactionCategoryObjectClass
+objectClass: top
+lastActivationDate: 20240701120000Z
+creator: cn=Directory Manager
+createdDate: 20240701083000Z
+lastActivationUser: cn=Directory Manager
+transactionGroupId:TG00123478
+transactionGroupsUid: UID67890
+description:transaction entry
+isActive: TRUE
+uniqueMember: cn=Directory Manager

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>DatabaseMethods.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">serviceunitTest (QuarkusTest)</a> &gt; <a href="index.source.html" class="el_package">DatabaseConnection</a> &gt; <span class="el_source">DatabaseMethods.java</span></div><h1>DatabaseMethods.java</h1><pre class="source lang-java linenums">package DatabaseConnection;
+
+import java.io.IOException;
+import java.util.ArrayList;
+
+import org.apache.directory.api.ldap.model.cursor.EntryCursor;
+import org.apache.directory.api.ldap.model.entry.DefaultEntry;
+import org.apache.directory.api.ldap.model.exception.LdapException;
+import org.apache.directory.ldap.client.api.LdapConnection;
+
+import Data.trancategory;
+import Service.ServiceResponse;
+import jakarta.enterprise.context.ApplicationScoped;
+import java.util.List;
+import org.eclipse.microprofile.config.inject.ConfigProperty;
+import org.apache.directory.api.ldap.model.entry.Entry;
+import jakarta.ws.rs.core.Response;
+import lombok.extern.slf4j.Slf4j;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+
+import org.apache.commons.pool2.impl.GenericObjectPoolConfig;
+import org.apache.directory.api.ldap.model.exception.LdapException;
+import org.apache.directory.api.ldap.model.message.SearchScope;
+import org.apache.directory.ldap.client.api.DefaultLdapConnectionFactory;
+import org.apache.directory.ldap.client.api.LdapConnection;
+import org.apache.directory.ldap.client.api.LdapConnectionConfig;
+import org.apache.directory.ldap.client.api.LdapConnectionPool;
+import org.apache.directory.ldap.client.api.ValidatingPoolableLdapConnectionFactory;
+import org.eclipse.microprofile.config.inject.ConfigProperty;
+import org.apache.directory.api.ldap.model.cursor.CursorException;
+import org.apache.directory.api.ldap.model.cursor.EntryCursor;
+import org.apache.directory.api.ldap.model.entry.DefaultEntry;
+import org.apache.directory.api.ldap.model.entry.DefaultModification;
+import org.apache.directory.api.ldap.model.entry.Entry;
+import org.apache.directory.api.ldap.model.entry.Modification;
+import org.apache.directory.api.ldap.model.entry.ModificationOperation;
+
+import jakarta.annotation.PostConstruct;
+import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.ws.rs.core.Response;
+import lombok.Getter;
+import lombok.extern.slf4j.Slf4j;
+
+
+
+<span class="fc" id="L50">@Slf4j</span>
+@ApplicationScoped
+<span class="fc" id="L52">public class DatabaseMethods {</span>
+
+    @ConfigProperty(name=&quot;ldap.rdn&quot;)
+    String RDN;
+
+    @ConfigProperty(name = &quot;ldap.base.dn&quot;)
+    private String baseDn;
+
+    @ConfigProperty(name = &quot;ldap.states.objectClasses.all&quot;)
+    List&lt;String&gt; tranObjectClasses;
+
+    @ConfigProperty(name=&quot;ldap.attributes&quot;)
+    List&lt;String&gt; tranAttributes;
+    
+    public Response AddEntryToDatabase(ArrayList&lt;trancategory&gt; tranCategoryList, LdapConnection connection) {
+        try {
+<span class="fc bfc" id="L68" title="All 2 branches covered.">            for (trancategory category : tranCategoryList) {</span>
+<span class="fc" id="L69">                String rdn = RDN + &quot;=&quot; + category.getTransactionGroupId();</span>
+<span class="fc" id="L70">                String dn = rdn + &quot;,&quot; + baseDn;</span>
+<span class="fc" id="L71">                Entry entry = new DefaultEntry(dn);</span>
+<span class="fc" id="L72">                addObjectClasses(entry);</span>
+<span class="fc" id="L73">                addAttributes(entry,category);</span>
+<span class="fc" id="L74">                connection.add(entry);</span>
+<span class="fc" id="L75">            }</span>
+<span class="fc" id="L76">            ServiceResponse serviceResponse = new ServiceResponse(&quot;0&quot;, &quot;200&quot;, &quot;Entries added successfully&quot;);</span>
+<span class="fc" id="L77">            return Response.ok(serviceResponse).build();</span>
+<span class="nc" id="L78">        } catch (Exception e) {</span>
+<span class="nc" id="L79">            log.error(&quot;Error adding entries to LDAP&quot;, e);</span>
+<span class="nc" id="L80">            return Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity(&quot;Error adding entries to LDAP: &quot; + e.getMessage()).build();</span>
+        }
+    }
+
+    private void addObjectClasses(Entry entry) throws LdapException {
+<span class="fc bfc" id="L85" title="All 2 branches covered.">        for(int i=0;i&lt;tranObjectClasses.size();i++){</span>
+<span class="fc" id="L86">            entry.add(&quot;objectClass&quot;,tranObjectClasses.get(i));</span>
+        }
+<span class="fc" id="L88">    }</span>
+
+    private void addAttributes(Entry entry, trancategory category) throws LdapException{
+<span class="fc" id="L91">            entry.add(tranAttributes.get(0), category.getLastActivationDate());</span>
+<span class="fc" id="L92">            entry.add(tranAttributes.get(1), category.getCreator());</span>
+<span class="fc" id="L93">            entry.add(tranAttributes.get(2), category.getCreatedDate());</span>
+<span class="fc" id="L94">            entry.add(tranAttributes.get(3), category.getLastActivationUser());</span>
+<span class="fc" id="L95">            entry.add(tranAttributes.get(4), category.getTransactionGroupsUid());</span>
+<span class="fc" id="L96">            entry.add(tranAttributes.get(5), category.getDescription());</span>
+<span class="fc" id="L97">            entry.add(tranAttributes.get(6), category.getUniqueMember());</span>
+<span class="fc" id="L98">            entry.add(tranAttributes.get(7), category.getIsActive());</span>
+<span class="fc" id="L99">    }</span>
+
+    public Response searchEntryMethod(Map&lt;String, String&gt; searchCriteria, LdapConnection connection) {
+<span class="fc" id="L102">        EntryCursor cursor = null;</span>
+<span class="fc" id="L103">        List&lt;trancategory&gt; result = new ArrayList&lt;&gt;();</span>
+        try {
+            // Build the search filter from the searchCriteria map
+<span class="fc" id="L106">            StringBuilder filter = new StringBuilder(&quot;(&amp;&quot;);</span>
+<span class="fc bfc" id="L107" title="All 2 branches covered.">            for (Map.Entry&lt;String, String&gt; entry : searchCriteria.entrySet()) {</span>
+<span class="fc" id="L108">                filter.append(&quot;(&quot;).append(entry.getKey()).append(&quot;=&quot;).append(entry.getValue()).append(&quot;)&quot;);</span>
+<span class="fc" id="L109">            }</span>
+<span class="fc" id="L110">            filter.append(&quot;)&quot;);</span>
+
+<span class="fc" id="L112">            System.out.println(&quot;===============================&quot;+filter);</span>
+            
+            // Define the base DN for the search
+<span class="fc" id="L115">            String dn = baseDn; // You can customize this as needed</span>
+            
+            // Perform the search
+<span class="fc" id="L118">            cursor = connection.search(dn, filter.toString(), SearchScope.SUBTREE);</span>
+<span class="fc bfc" id="L119" title="All 2 branches covered.">            for (Entry entry : cursor) {</span>
+<span class="fc" id="L120">                trancategory category = new trancategory();</span>
+<span class="fc" id="L121">                category.setLastActivationDate(entry.get(tranAttributes.get(0)).getString());</span>
+<span class="fc" id="L122">                category.setCreator(entry.get(tranAttributes.get(1)).getString());</span>
+<span class="fc" id="L123">                category.setCreatedDate(entry.get(tranAttributes.get(2)).getString());</span>
+<span class="fc" id="L124">                category.setLastActivationUser(entry.get(tranAttributes.get(3)).getString());</span>
+<span class="fc" id="L125">                category.setTransactionGroupId(entry.get(&quot;transactionGroupId&quot;).getString());</span>
+<span class="fc" id="L126">                category.setTransactionGroupsUid(entry.get(tranAttributes.get(4)).getString());</span>
+<span class="fc" id="L127">                category.setDescription(entry.get(tranAttributes.get(5)).getString());</span>
+<span class="fc" id="L128">                category.setUniqueMember(entry.get(tranAttributes.get(6)).getString());</span>
+<span class="fc" id="L129">                category.setIsActive(entry.get(tranAttributes.get(7)).getString());</span>
+<span class="fc" id="L130">                result.add(category);</span>
+<span class="fc" id="L131">            }</span>
+<span class="fc" id="L132">            return Response.ok(result).build();</span>
+<span class="nc" id="L133">        } catch (LdapException e) {</span>
+<span class="nc" id="L134">            log.error(&quot;Error searching entries in LDAP&quot;, e);</span>
+<span class="nc" id="L135">            return Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity(&quot;Failed to search entries&quot;).build();</span>
+        } finally {
+<span class="pc bpc" id="L137" title="1 of 2 branches missed.">            if (cursor != null) {</span>
+                try {
+<span class="fc" id="L139">                    cursor.close();</span>
+<span class="nc" id="L140">                } catch (IOException e) {</span>
+<span class="nc" id="L141">                    log.error(&quot;Error closing LDAP cursor&quot;, e);</span>
+<span class="fc" id="L142">                }</span>
+            }
+        }
+    }
+
+    public Response deleteEntry(String transactionGroupId, LdapConnection connection) throws CursorException{
+        try{
+<span class="fc" id="L149">            String dn = &quot;transactionGroupId=&quot; + transactionGroupId + &quot;,&quot; + baseDn;</span>
+<span class="fc" id="L150">            log.info(&quot;Deleting LDAP entry with DN: &quot; + dn);</span>
+
+            // Verify the entry exists before attempting to delete it
+<span class="fc" id="L153">            EntryCursor cursor = connection.search(dn, &quot;(objectclass=*)&quot;, SearchScope.OBJECT);</span>
+<span class="pc bpc" id="L154" title="1 of 2 branches missed.">            if (!cursor.next()) {</span>
+<span class="nc" id="L155">                log.warn(&quot;Entry not found for transactionGroupId: &quot; + transactionGroupId);</span>
+<span class="nc" id="L156">                return Response.status(Response.Status.NOT_FOUND).entity(&quot;Entry not found&quot;).build();</span>
+            }
+
+<span class="fc" id="L159">            connection.delete(dn);</span>
+<span class="fc" id="L160">            log.info(&quot;Entry deleted successfully for DN: &quot; + dn);</span>
+<span class="fc" id="L161">            return Response.ok(&quot;Entry deleted successfully&quot;).build();</span>
+<span class="nc" id="L162">        } catch (LdapException e) {</span>
+<span class="nc" id="L163">            log.error(&quot;Error deleting entry from LDAP&quot;, e);</span>
+<span class="nc" id="L164">            return Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity(&quot;Failed to delete entry&quot;).build();</span>
+<span class="nc" id="L165">        } catch (Exception e) {</span>
+<span class="nc" id="L166">            log.error(&quot;Error closing LDAP cursor&quot;, e);</span>
+<span class="nc" id="L167">            return Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity(&quot;Failed to delete entry&quot;).build();</span>
+        }
+    }
+
+    public Response modifyEntry(String transactionGroupId, Map&lt;String, String&gt; attributes, LdapConnection connection) throws CursorException {
+        try{
+<span class="fc" id="L173">            String dn = &quot;transactionGroupId=&quot; + transactionGroupId + &quot;,&quot; + baseDn;</span>
+<span class="fc" id="L174">            log.info(&quot;Updating LDAP entry with DN: &quot; + dn);</span>
+    
+            // Verify the entry exists before attempting to update it
+<span class="fc" id="L177">            EntryCursor cursor = connection.search(dn, &quot;(objectclass=*)&quot;, SearchScope.OBJECT);</span>
+<span class="pc bpc" id="L178" title="1 of 2 branches missed.">            if (!cursor.next()) {</span>
+<span class="nc" id="L179">                log.warn(&quot;Entry not found for transactionGroupId: &quot; + transactionGroupId);</span>
+<span class="nc" id="L180">                return Response.status(Response.Status.NOT_FOUND).entity(&quot;Entry not found&quot;).build();</span>
+            }
+    
+            // Create a list of modifications to be applied to the entry
+<span class="fc" id="L184">            List&lt;Modification&gt; modifications = new ArrayList&lt;&gt;();</span>
+<span class="fc bfc" id="L185" title="All 2 branches covered.">            for (Map.Entry&lt;String, String&gt; attribute : attributes.entrySet()) {</span>
+<span class="fc" id="L186">                modifications.add(new DefaultModification(ModificationOperation.REPLACE_ATTRIBUTE, attribute.getKey(), attribute.getValue()));</span>
+<span class="fc" id="L187">            }</span>
+    
+            // Apply the modifications to the entry
+<span class="fc" id="L190">            connection.modify(dn, modifications.toArray(new Modification[0]));</span>
+<span class="fc" id="L191">            log.info(&quot;Entry updated successfully for DN: &quot; + dn);</span>
+<span class="fc" id="L192">            return Response.ok(&quot;Entry updated successfully&quot;).build();</span>
+<span class="nc" id="L193">        } catch (LdapException e) {</span>
+<span class="nc" id="L194">            log.error(&quot;Error updating entry in LDAP&quot;, e);</span>
+<span class="nc" id="L195">            return Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity(&quot;Failed to update entry&quot;).build();</span>
+<span class="nc" id="L196">        } catch (Exception e) {</span>
+<span class="nc" id="L197">            log.error(&quot;Error closing LDAP cursor&quot;, e);</span>
+<span class="nc" id="L198">            return Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity(&quot;Failed to update entry&quot;).build();</span>
+        }
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

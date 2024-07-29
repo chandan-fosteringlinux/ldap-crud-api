@@ -1,6 +1,6 @@
 GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
-serviceunitTest (QuarkusTest),Service,serviceimpl,67,3,0,0,18,1,6,1,6,1
-serviceunitTest (QuarkusTest),Service,ServiceResponse,23,21,0,0,4,8,5,4,5,4
-serviceunitTest (QuarkusTest),Data,trancategory,50,66,0,0,2,11,2,19,2,19
-serviceunitTest (QuarkusTest),DatabaseConnection,Connection,98,0,0,0,29,0,5,0,5,0
-serviceunitTest (QuarkusTest),DatabaseConnection,DatabaseMethods,95,476,3,13,24,69,3,13,0,8
+serviceunitTest (QuarkusTest),Service,serviceimpl,6,64,0,0,2,17,0,7,0,7
+serviceunitTest (QuarkusTest),Service,ServiceResponse,0,12,0,0,0,5,0,1,0,1
+serviceunitTest (QuarkusTest),DatabaseConnection,DatabaseMethods.InvalidCategoryAttributeException,0,7,0,0,0,3,0,1,0,1
+serviceunitTest (QuarkusTest),DatabaseConnection,Connection,3,89,0,0,2,25,0,3,0,3
+serviceunitTest (QuarkusTest),DatabaseConnection,DatabaseMethods,5,594,8,28,2,98,8,19,0,9

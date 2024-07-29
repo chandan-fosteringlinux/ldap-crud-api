@@ -2,6 +2,7 @@ package com.example.serviceImpltest;
 
 import static org.junit.Assert.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.fail;
 
 import java.util.ArrayList;
@@ -9,6 +10,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.apache.directory.api.ldap.model.cursor.CursorException;
 import org.apache.directory.api.ldap.model.entry.DefaultEntry;
 import org.apache.directory.api.ldap.model.exception.LdapException;
 import org.apache.directory.api.ldap.model.exception.LdapInvalidAttributeValueException;
@@ -82,18 +84,14 @@ public class serviceunitTest {
         tc.setUniqueMember("cn=Directory Manager");
         tc.setIsActive("true");
         tranCategoryList.add(tc);
-        System.out.println("trancategory==="+tc.getDescription());
-        System.out.println("uniqueMember==="+tc.getUniqueMember());
-        System.out.println("Description==="+tc.getDescription());
-
     }
 
     @Order(1)
     @Test
     public void addEntryToDatabaseTest(){
-        Response response = databaseMethods.AddEntryToDatabase(tranCategoryList,connection);
-        tranCategoryList.get(0).getUniqueMember();
-        System.out.println("--------------tcl---------"+tranCategoryList.get(0).getUniqueMember());
+        ServiceImpl.setLdapConnection(connection);
+        Response response = ServiceImpl.addEntry(tranCategoryList);
+
         assertNotNull(response);    
         assertEquals(Response.Status.OK.getStatusCode(), response.getStatus(), "The response status should be 200 OK");
 
@@ -111,19 +109,15 @@ public class serviceunitTest {
     public void searchEntryTest(){
         Map<String, String> searchCriteria = new HashMap<>();
         searchCriteria.put("transactionGroupId", "TG777777777");
-        Response response = databaseMethods.searchEntryMethod(searchCriteria, connection);
+        ServiceImpl.setLdapConnection(connection);
+        Response response = ServiceImpl.searchEntry(searchCriteria);
         assertNotNull(response);
-
 
         ArrayList<trancategory> result = (ArrayList<trancategory>) response.getEntity();
         assertNotNull(result);
         assertEquals(1, result.size());
 
         trancategory category = result.get(0);
-        System.out.println("Description==="+category.getDescription());
-        System.out.println("uniqueMember==="+category.getUniqueMember());
-        System.out.println("transactionGroupId==="+category.getTransactionGroupsUid());
-
         assertEquals("20240729000000Z", category.getLastActivationDate());
         assertEquals("cn=Directory Manager", category.getCreator());
         assertEquals("20240719000000Z", category.getCreatedDate());
@@ -135,6 +129,17 @@ public class serviceunitTest {
         assertEquals("true", category.getIsActive());
     }
 
+    @Test
+    public void searchWithWrongattribute(){
+        Map<String, String> searchCriteria = new HashMap<>();
+        searchCriteria.put("traactionGroupId", "777777");
+        ServiceImpl.setLdapConnection(connection);
+        Response response = ServiceImpl.searchEntry(searchCriteria);
+        assertNotNull(response);
+        assertEquals("[]", response.getEntity().toString());
+        assertEquals(200, response.getStatus());
+    }
+
     @Order(3)
     @Test
     public void updateEntityTest(){
@@ -142,7 +147,9 @@ public class serviceunitTest {
             Map<String, String> attributes = new HashMap<>();
             attributes.put("lastActivationDate", "20240927191300Z");
             String transactionGroupId = "TG777777777";
-            Response response = databaseMethods.modifyEntry(transactionGroupId, attributes,connection);
+            // Response response = databaseMethods.modifyEntry(transactionGroupId, attributes,connection);
+            ServiceImpl.setLdapConnection(connection);
+            Response response = ServiceImpl.updateEntryAttributes(transactionGroupId, attributes);
             assertNotNull(response);
             assertEquals("Entry updated successfully", response.getEntity().toString());
             assertEquals(200,response.getStatus());
@@ -153,23 +160,145 @@ public class serviceunitTest {
 
     @Order(4)
     @Test
+    public void ModifyEntityTestWithTGID(){
+        try {
+            Map<String, String> attributes = new HashMap<>();
+            attributes.put("transactionGroupId", "TG7777777d");
+            String transactionGroupId = "TG777777777";
+            // Response response = databaseMethods.modifyEntry(transactionGroupId, attributes,connection);
+            ServiceImpl.setLdapConnection(connection);
+            Response response = ServiceImpl.updateEntryAttributes(transactionGroupId, attributes);
+            assertNotNull(response);
+            System.out.println("Entry updated successfully"+response.getEntity().toString());
+            System.out.println("response.getStatus()"+response.getStatus());
+            // assertEquals("Entry updated successfully", response.getEntity().toString());
+            // assertEquals(200,response.getStatus());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Test
+    public void modifywithInocorrectdata(){
+        try {
+            Map<String, String> attributes = new HashMap<>();
+            attributes.put("astActivationDate", "20240927191300Z");
+            String transactionGroupId = "TG777777777";
+            // Response response = databaseMethods.modifyEntry(transactionGroupId, attributes,connection);
+            ServiceImpl.setLdapConnection(connection);
+            Response response = ServiceImpl.updateEntryAttributes(transactionGroupId, attributes);
+            assertNotNull(response);
+            assertEquals("Entry not found", response.getEntity().toString());
+            System.out.println("modify incorrect information status"+response.getStatus() );
+            // assertEquals(200,response.getStatus());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Order(5)
+    @Test
     public void deleteEntry(){
         String transactionGroupId = "TG777777777";        
         try {
-        Response response = databaseMethods.deleteEntry(transactionGroupId,connection);
+            ServiceImpl.setLdapConnection(connection);
+        Response response = ServiceImpl.deleteEntry(transactionGroupId);
         assertNotNull(response);    
         assertEquals(response.getStatus(),200);
         assertEquals(response.getEntity().toString(), "Entry deleted successfully");
-        System.out.println("responsestatus"+response.getStatus());
-        System.out.println("statusCode "+Response.Status.OK.getStatusCode());
-        System.out.println("responseentity"+response.getEntity().toString());
         } catch (Exception e) {
             e.printStackTrace();
         }        
     }
 
-    
+    @Test
+    public void deleteEntryWithIncorrectTG(){
+        String transactionGroupId = "77777777";        
+        try {
+            ServiceImpl.setLdapConnection(connection);
+        Response response = ServiceImpl.deleteEntry(transactionGroupId);
+        assertNotNull(response);    
+        assertEquals(response.getStatus(),404);
+        assertEquals(response.getEntity().toString(), "Entry not found");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }        
+    }
 
+    @Order(6)
+    @Test
+    public void addEntryWithNullValuesTest() {
+        ServiceImpl.setLdapConnection(connection);
+        ArrayList<trancategory> nullCategoryList = new ArrayList<>();
+        trancategory tc = new trancategory();
+        tc.setTransactionGroupId(null); 
+        tc.setLastActivationDate(null); 
+        tc.setCreator(null); 
+        tc.setCreatedDate(null); 
+        tc.setLastActivationUser(null); 
+        tc.setTransactionGroupsUid(null);
+        tc.setDescription(null); 
+        tc.setUniqueMember(null); 
+        tc.setIsActive(null);
+        nullCategoryList.add(tc);
+
+        Response response = databaseMethods.AddEntryToDatabase(nullCategoryList, connection);
+
+        assertNotNull(response);
+        assertEquals(Response.Status.INTERNAL_SERVER_ERROR.getStatusCode(), response.getStatus(), "The response status should be 500 INTERNAL SERVER ERROR");
+        assertEquals("Error adding entries to LDAP: Some of the required attributes are missing", response.getEntity().toString());
+    }
+
+    @Test
+    public void deleteEntryWithIncorrectconnection(){
+        String transactionGroupId = "TG777777777";        
+        try {
+            connection = new LdapNetworkConnection("127.1.1.1", 1200);
+            ServiceImpl.setLdapConnection(connection);
+        Response response = ServiceImpl.deleteEntry(transactionGroupId);
+        assertNotNull(response);    
+        assertEquals(500, response.getStatus());
+        assertEquals(200, Response.Status.OK.getStatusCode());
+        assertEquals("Failed to delete entry", response.getEntity().toString());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }        
+    }
+
+    @Test
+    public void searchEntryMethodWithIncorrectConnection(){
+        try {
+            connection = new LdapNetworkConnection("127.1.1.1", 1200);
+            Map<String, String> searchCriteria = new HashMap<>();
+            searchCriteria.put("transactionGroupId", "TG777777777");
+            ServiceImpl.setLdapConnection(connection);
+            Response response = ServiceImpl.searchEntry(searchCriteria);
+            assertNotNull(response);
+            assertEquals(500, response.getStatus());
+            assertEquals(200, Response.Status.OK.getStatusCode());
+            assertEquals("Failed to search entries", response.getEntity().toString());
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }        
+    }
+
+    @Test
+    public void modifywithIncorrectConnection(){
+        try {
+            connection = new LdapNetworkConnection("127.1.1.1", 1200);
+            Map<String, String> attributes = new HashMap<>();
+            attributes.put("lastActivationDate", "20240927191300Z");
+            String transactionGroupId = "TG777777777";
+            ServiceImpl.setLdapConnection(connection);
+            Response response = ServiceImpl.updateEntryAttributes(transactionGroupId, attributes);
+            assertNotNull(response);
+            assertEquals(500, response.getStatus());
+            assertEquals("Failed to update entry", response.getEntity().toString());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 
 
 

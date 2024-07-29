@@ -16,9 +16,6 @@ public class ServiceResponse {
     private String returnCode;
     private String responseCode;
     private String responseMessage;
-    
-    public ServiceResponse() {
-    }
 
     public ServiceResponse(String returnCode, String responseCode, String responseMessage) {
         this.returnCode = returnCode;

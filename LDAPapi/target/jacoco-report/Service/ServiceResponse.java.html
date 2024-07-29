@@ -7,23 +7,20 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
-<span class="nc" id="L10">@ToString</span>
+@ToString
 @Getter
-<span class="nc" id="L12">@Setter</span>
+@Setter
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class ServiceResponse {
     
-<span class="fc" id="L16">    private String returnCode;</span>
-<span class="fc" id="L17">    private String responseCode;</span>
-<span class="fc" id="L18">    private String responseMessage;</span>
-    
-<span class="nc" id="L20">    public ServiceResponse() {</span>
-<span class="nc" id="L21">    }</span>
+    private String returnCode;
+    private String responseCode;
+    private String responseMessage;
 
-<span class="fc" id="L23">    public ServiceResponse(String returnCode, String responseCode, String responseMessage) {</span>
-<span class="fc" id="L24">        this.returnCode = returnCode;</span>
-<span class="fc" id="L25">        this.responseCode = responseCode;</span>
-<span class="fc" id="L26">        this.responseMessage = responseMessage;</span>
-<span class="fc" id="L27">    }</span>
+<span class="fc" id="L20">    public ServiceResponse(String returnCode, String responseCode, String responseMessage) {</span>
+<span class="fc" id="L21">        this.returnCode = returnCode;</span>
+<span class="fc" id="L22">        this.responseCode = responseCode;</span>
+<span class="fc" id="L23">        this.responseMessage = responseMessage;</span>
+<span class="fc" id="L24">    }</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

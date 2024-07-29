@@ -32,45 +32,45 @@ import jakarta.ws.rs.core.Response;
 
     @PostConstruct
     void init() {
-<span class="nc" id="L35">        connection = connectionClass.ldapconnection();</span>
-<span class="nc" id="L36">    }</span>
+<span class="fc" id="L35">        connection = connectionClass.ldapconnection();</span>
+<span class="fc" id="L36">    }</span>
 
     public void setLdapConnection(LdapConnection connection) {
-<span class="nc" id="L39">        this.connection = connection;</span>
-<span class="nc" id="L40">    }</span>
+<span class="fc" id="L39">        this.connection = connection;</span>
+<span class="fc" id="L40">    }</span>
     
     @Override
     public Response addEntry(ArrayList&lt;trancategory&gt; tranCategoryList) {
-<span class="nc" id="L44">        Response response = databaseMethods.AddEntryToDatabase(tranCategoryList,connection);</span>
-<span class="nc" id="L45">        return response;</span>
+<span class="fc" id="L44">        Response response = databaseMethods.AddEntryToDatabase(tranCategoryList,connection);</span>
+<span class="fc" id="L45">        return response;</span>
     }
 
     @Override
     public Response searchEntry(Map&lt;String, String&gt; searchCriteria) {
-<span class="nc" id="L50">        Response response = databaseMethods.searchEntryMethod(searchCriteria, connection);</span>
-<span class="nc" id="L51">        return response;</span>
+<span class="fc" id="L50">        Response response = databaseMethods.searchEntryMethod(searchCriteria, connection);</span>
+<span class="fc" id="L51">        return response;</span>
     }
 
     @Override
     public Response deleteEntry(String transactionGroupId) {
-<span class="nc" id="L56">        Response response=Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity(&quot;Failed to search entries&quot;).build();;</span>
+<span class="fc" id="L56">        Response response=Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity(&quot;Failed to search entries&quot;).build();;</span>
         try {
-<span class="nc" id="L58">            response = databaseMethods.deleteEntry(transactionGroupId,connection);</span>
-<span class="nc" id="L59">        } catch (Exception e) {</span>
+<span class="fc" id="L58">            response = databaseMethods.deleteEntry(transactionGroupId,connection);</span>
+<span class="pc" id="L59">        } catch (Exception e) {</span>
 <span class="nc" id="L60">            e.printStackTrace();</span>
         }
-<span class="nc" id="L62">        return response;</span>
+<span class="fc" id="L62">        return response;</span>
     }
 
     @Override
     public Response updateEntryAttributes(String transactionGroupId, Map&lt;String, String&gt; attributes) {
-<span class="nc" id="L67">        Response response = Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity(&quot;Failed to update entry&quot;).build();</span>
+<span class="fc" id="L67">        Response response = Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity(&quot;Failed to update entry&quot;).build();</span>
         try {
-<span class="nc" id="L69">            response = databaseMethods.modifyEntry(transactionGroupId, attributes,connection);</span>
-<span class="nc" id="L70">        } catch (Exception e) {</span>
+<span class="fc" id="L69">            response = databaseMethods.modifyEntry(transactionGroupId, attributes,connection);</span>
+<span class="pc" id="L70">        } catch (Exception e) {</span>
 <span class="nc" id="L71">            e.printStackTrace();</span>
         }
-<span class="nc" id="L73">        return response;</span>
+<span class="fc" id="L73">        return response;</span>
     }
 
 }

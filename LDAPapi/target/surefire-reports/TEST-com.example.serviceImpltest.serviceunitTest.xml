@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.example.serviceImpltest.serviceunitTest" time="16.794" tests="4" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.example.serviceImpltest.serviceunitTest" time="10.553" tests="12" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -17,7 +17,7 @@
     <property name="user.country" value="US"/>
     <property name="groovy.use.classvalue" value="false"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-17-openjdk-amd64/lib"/>
-    <property name="sun.java.command" value="/home/chandan/Desktop/ldapApi/crud-2-api/LDAPapi/target/surefire/surefirebooter-20240727020627195_3.jar /home/chandan/Desktop/ldapApi/crud-2-api/LDAPapi/target/surefire 2024-07-27T02-06-26_827-jvmRun1 surefire-20240727020627195_1tmp surefire_0-20240727020627195_2tmp"/>
+    <property name="sun.java.command" value="/home/chandan/Desktop/ldapApi/crud-2-api/LDAPapi/target/surefire/surefirebooter-20240729135501321_3.jar /home/chandan/Desktop/ldapApi/crud-2-api/LDAPapi/target/surefire 2024-07-29T13-55-01_121-jvmRun1 surefire-20240729135501321_1tmp surefire_0-20240729135501321_2tmp"/>
     <property name="maven.home" value="/home/chandan/Downloads/apache-maven-3.9.8"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/home/chandan/Desktop/ldapApi/crud-2-api/LDAPapi/target/test-classes:/home/chandan/Desktop/ldapApi/crud-2-api/LDAPapi/target/classes:/home/chandan/.m2/repository/io/quarkus/quarkus-rest-jackson/3.12.3/quarkus-rest-jackson-3.12.3.jar:/home/chandan/.m2/repository/io/quarkus/quarkus-rest/3.12.3/quarkus-rest-3.12.3.jar:/home/chandan/.m2/repository/io/quarkus/quarkus-rest-common/3.12.3/quarkus-rest-common-3.12.3.jar:/home/chandan/.m2/repository/io/quarkus/resteasy/reactive/resteasy-reactive-common/3.12.3/resteasy-reactive-common-3.12.3.jar:/home/chandan/.m2/repository/io/quarkus/resteasy/reactive/resteasy-reactive-common-types/3.12.3/resteasy-reactive-common-types-3.12.3.jar:/home/chandan/.m2/repository/org/reactivestreams/reactive-streams/1.0.4/reactive-streams-1.0.4.jar:/home/chandan/.m2/repository/io/smallrye/reactive/mutiny-zero-flow-adapters/1.1.0/mutiny-zero-flow-adapters-1.1.0.jar:/home/chandan/.m2/repository/io/quarkus/quarkus-mutiny/3.12.3/quarkus-mutiny-3.12.3.jar:/home/chandan/.m2/repository/io/quarkus/quarkus-smallrye-context-propagation/3.12.3/quarkus-smallrye-context-propagation-3.12.3.jar:/home/chandan/.m2/repository/io/smallrye/smallrye-context-propagation/2.1.2/smallrye-context-propagation-2.1.2.jar:/home/chandan/.m2/repository/io/smallrye/smallrye-context-propagation-api/2.1.2/smallrye-context-propagation-api-2.1.2.jar:/home/chandan/.m2/repository/io/smallrye/smallrye-context-propagation-storage/2.1.2/smallrye-context-propagation-storage-2.1.2.jar:/home/chandan/.m2/repository/io/smallrye/reactive/mutiny-smallrye-context-propagation/2.6.0/mutiny-smallrye-context-propagation-2.6.0.jar:/home/chandan/.m2/repository/io/quarkus/quarkus-vertx/3.12.3/quarkus-vertx-3.12.3.jar:/home/chandan/.m2/repository/io/quarkus/quarkus-netty/3.12.3/quarkus-netty-3.12.3.jar:/home/chandan/.m2/repository/io/netty/netty-codec/4.1.108.Final/netty-codec-4.1.108.Final.jar:/home/chandan/.m2/repository/com/aayushatharva/brotli4j/brotli4j/1.16.0/brotli4j-1.16.0.jar:/home/chandan/.m2/repository/com/aayushatharva/brotli4j/service/1.16.0/service-1.16.0.jar:/home/chandan/.m2/repository/com/aayushatharva/brotli4j/native-linux-x86_64/1.16.0/native-linux-x86_64-1.16.0.jar:/home/chandan/.m2/repository/io/netty/netty-codec-haproxy/4.1.108.Final/netty-codec-haproxy-4.1.108.Final.jar:/home/chandan/.m2/repository/io/quarkus/quarkus-vertx-latebound-mdc-provider/3.12.3/quarkus-vertx-latebound-mdc-provider-3.12.3.jar:/home/chandan/.m2/repository/io/smallrye/smallrye-fault-tolerance-vertx/6.3.0/smallrye-fault-tolerance-vertx-6.3.0.jar:/home/chandan/.m2/repository/io/quarkus/resteasy/reactive/resteasy-reactive-vertx/3.12.3/resteasy-reactive-vertx-3.12.3.jar:/home/chandan/.m2/repository/io/vertx/vertx-web/4.5.7/vertx-web-4.5.7.jar:/home/chandan/.m2/repository/io/vertx/vertx-web-common/4.5.7/vertx-web-common-4.5.7.jar:/home/chandan/.m2/repository/io/vertx/vertx-auth-common/4.5.7/vertx-auth-common-4.5.7.jar:/home/chandan/.m2/repository/io/vertx/vertx-bridge-common/4.5.7/vertx-bridge-common-4.5.7.jar:/home/chandan/.m2/repository/io/smallrye/reactive/smallrye-mutiny-vertx-core/3.12.0/smallrye-mutiny-vertx-core-3.12.0.jar:/home/chandan/.m2/repository/io/smallrye/reactive/smallrye-mutiny-vertx-runtime/3.12.0/smallrye-mutiny-vertx-runtime-3.12.0.jar:/home/chandan/.m2/repository/io/smallrye/reactive/vertx-mutiny-generator/3.12.0/vertx-mutiny-generator-3.12.0.jar:/home/chandan/.m2/repository/io/vertx/vertx-codegen/4.5.7/vertx-codegen-4.5.7.jar:/home/chandan/.m2/repository/io/quarkus/vertx/utils/quarkus-vertx-utils/3.12.3/quarkus-vertx-utils-3.12.3.jar:/home/chandan/.m2/repository/jakarta/ws/rs/jakarta.ws.rs-api/3.1.0/jakarta.ws.rs-api-3.1.0.jar:/home/chandan/.m2/repository/io/quarkus/quarkus-vertx-http/3.12.3/quarkus-vertx-http-3.12.3.jar:/home/chandan/.m2/repository/io/quarkus/quarkus-security-runtime-spi/3.12.3/quarkus-security-runtime-spi-3.12.3.jar:/home/chandan/.m2/repository/io/quarkus/quarkus-credentials/3.12.3/quarkus-credentials-3.12.3.jar:/home/chandan/.m2/repository/io/smallrye/common/smallrye-common-vertx-context/2.3.0/smallrye-common-vertx-context-2.3.0.jar:/home/chandan/.m2/repository/io/quarkus/security/quarkus-security/2.1.0/quarkus-security-2.1.0.jar:/home/chandan/.m2/repository/io/smallrye/reactive/smallrye-mutiny-vertx-web/3.12.0/smallrye-mutiny-vertx-web-3.12.0.jar:/home/chandan/.m2/repository/io/smallrye/reactive/smallrye-mutiny-vertx-web-common/3.12.0/smallrye-mutiny-vertx-web-common-3.12.0.jar:/home/chandan/.m2/repository/io/smallrye/reactive/smallrye-mutiny-vertx-auth-common/3.12.0/smallrye-mutiny-vertx-auth-common-3.12.0.jar:/home/chandan/.m2/repository/io/smallrye/reactive/smallrye-mutiny-vertx-bridge-common/3.12.0/smallrye-mutiny-vertx-bridge-common-3.12.0.jar:/home/chandan/.m2/repository/io/smallrye/reactive/smallrye-mutiny-vertx-uri-template/3.12.0/smallrye-mutiny-vertx-uri-template-3.12.0.jar:/home/chandan/.m2/repository/io/vertx/vertx-uri-template/4.5.7/vertx-uri-template-4.5.7.jar:/home/chandan/.m2/repository/io/github/crac/org-crac/0.1.3/org-crac-0.1.3.jar:/home/chandan/.m2/repository/io/quarkus/quarkus-jsonp/3.12.3/quarkus-jsonp-3.12.3.jar:/home/chandan/.m2/repository/org/eclipse/parsson/parsson/1.1.6/parsson-1.1.6.jar:/home/chandan/.m2/repository/io/quarkus/quarkus-virtual-threads/3.12.3/quarkus-virtual-threads-3.12.3.jar:/home/chandan/.m2/repository/io/vertx/vertx-core/4.5.7/vertx-core-4.5.7.jar:/home/chandan/.m2/repository/io/netty/netty-common/4.1.108.Final/netty-common-4.1.108.Final.jar:/home/chandan/.m2/repository/io/netty/netty-buffer/4.1.108.Final/netty-buffer-4.1.108.Final.jar:/home/chandan/.m2/repository/io/netty/netty-transport/4.1.108.Final/netty-transport-4.1.108.Final.jar:/home/chandan/.m2/repository/io/netty/netty-handler/4.1.108.Final/netty-handler-4.1.108.Final.jar:/home/chandan/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.108.Final/netty-transport-native-unix-common-4.1.108.Final.jar:/home/chandan/.m2/repository/io/netty/netty-handler-proxy/4.1.108.Final/netty-handler-proxy-4.1.108.Final.jar:/home/chandan/.m2/repository/io/netty/netty-codec-socks/4.1.108.Final/netty-codec-socks-4.1.108.Final.jar:/home/chandan/.m2/repository/io/netty/netty-codec-http/4.1.108.Final/netty-codec-http-4.1.108.Final.jar:/home/chandan/.m2/repository/io/netty/netty-codec-http2/4.1.108.Final/netty-codec-http2-4.1.108.Final.jar:/home/chandan/.m2/repository/io/netty/netty-resolver/4.1.108.Final/netty-resolver-4.1.108.Final.jar:/home/chandan/.m2/repository/io/netty/netty-resolver-dns/4.1.108.Final/netty-resolver-dns-4.1.108.Final.jar:/home/chandan/.m2/repository/io/netty/netty-codec-dns/4.1.108.Final/netty-codec-dns-4.1.108.Final.jar:/home/chandan/.m2/repository/io/quarkus/quarkus-rest-jackson-common/3.12.3/quarkus-rest-jackson-common-3.12.3.jar:/home/chandan/.m2/repository/io/quarkus/quarkus-jackson/3.12.3/quarkus-jackson-3.12.3.jar:/home/chandan/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.17.2/jackson-datatype-jsr310-2.17.2.jar:/home/chandan/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.17.2/jackson-datatype-jdk8-2.17.2.jar:/home/chandan/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.17.2/jackson-module-parameter-names-2.17.2.jar:/home/chandan/.m2/repository/io/quarkus/quarkus-rest-client-jackson/3.12.3/quarkus-rest-client-jackson-3.12.3.jar:/home/chandan/.m2/repository/io/quarkus/resteasy/reactive/resteasy-reactive-jackson/3.12.3/resteasy-reactive-jackson-3.12.3.jar:/home/chandan/.m2/repository/io/quarkus/resteasy/reactive/resteasy-reactive/3.12.3/resteasy-reactive-3.12.3.jar:/home/chandan/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.17.2/jackson-databind-2.17.2.jar:/home/chandan/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.17.2/jackson-annotations-2.17.2.jar:/home/chandan/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.17.2/jackson-core-2.17.2.jar:/home/chandan/.m2/repository/jakarta/annotation/jakarta.annotation-api/3.0.0/jakarta.annotation-api-3.0.0.jar:/home/chandan/.m2/repository/org/jboss/logging/commons-logging-jboss-logging/1.0.0.Final/commons-logging-jboss-logging-1.0.0.Final.jar:/home/chandan/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.2/jakarta.xml.bind-api-4.0.2.jar:/home/chandan/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.3/jakarta.activation-api-2.1.3.jar:/home/chandan/.m2/repository/org/jboss/logging/jboss-logging/3.6.0.Final/jboss-logging-3.6.0.Final.jar:/home/chandan/.m2/repository/io/quarkus/quarkus-rest-client/3.12.3/quarkus-rest-client-3.12.3.jar:/home/chandan/.m2/repository/io/quarkus/quarkus-rest-client-jaxrs/3.12.3/quarkus-rest-client-jaxrs-3.12.3.jar:/home/chandan/.m2/repository/io/quarkus/resteasy/reactive/resteasy-reactive-client/3.12.3/resteasy-reactive-client-3.12.3.jar:/home/chandan/.m2/repository/io/vertx/vertx-web-client/4.5.7/vertx-web-client-4.5.7.jar:/home/chandan/.m2/repository/io/quarkus/quarkus-smallrye-stork/3.12.3/quarkus-smallrye-stork-3.12.3.jar:/home/chandan/.m2/repository/io/quarkus/quarkus-rest-client-config/3.12.3/quarkus-rest-client-config-3.12.3.jar:/home/chandan/.m2/repository/io/quarkus/quarkus-tls-registry/3.12.3/quarkus-tls-registry-3.12.3.jar:/home/chandan/.m2/repository/io/smallrye/stork/stork-api/2.6.0/stork-api-2.6.0.jar:/home/chandan/.m2/repository/io/smallrye/stork/stork-core/2.6.0/stork-core-2.6.0.jar:/home/chandan/.m2/repository/org/eclipse/microprofile/rest/client/microprofile-rest-client-api/3.0.1/microprofile-rest-client-api-3.0.1.jar:/home/chandan/.m2/repository/io/quarkus/quarkus-arc/3.12.3/quarkus-arc-3.12.3.jar:/home/chandan/.m2/repository/io/quarkus/arc/arc/3.12.3/arc-3.12.3.jar:/home/chandan/.m2/repository/jakarta/enterprise/jakarta.enterprise.cdi-api/4.1.0/jakarta.enterprise.cdi-api-4.1.0.jar:/home/chandan/.m2/repository/jakarta/enterprise/jakarta.enterprise.lang-model/4.1.0/jakarta.enterprise.lang-model-4.1.0.jar:/home/chandan/.m2/repository/jakarta/el/jakarta.el-api/5.0.1/jakarta.el-api-5.0.1.jar:/home/chandan/.m2/repository/jakarta/interceptor/jakarta.interceptor-api/2.2.0/jakarta.interceptor-api-2.2.0.jar:/home/chandan/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar:/home/chandan/.m2/repository/io/smallrye/reactive/mutiny/2.6.0/mutiny-2.6.0.jar:/home/chandan/.m2/repository/io/smallrye/common/smallrye-common-annotation/2.3.0/smallrye-common-annotation-2.3.0.jar:/home/chandan/.m2/repository/org/jctools/jctools-core/4.0.3/jctools-core-4.0.3.jar:/home/chandan/.m2/repository/io/quarkus/quarkus-core/3.12.3/quarkus-core-3.12.3.jar:/home/chandan/.m2/repository/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1.jar:/home/chandan/.m2/repository/io/smallrye/common/smallrye-common-os/2.3.0/smallrye-common-os-2.3.0.jar:/home/chandan/.m2/repository/io/quarkus/quarkus-ide-launcher/3.12.3/quarkus-ide-launcher-3.12.3.jar:/home/chandan/.m2/repository/io/quarkus/quarkus-development-mode-spi/3.12.3/quarkus-development-mode-spi-3.12.3.jar:/home/chandan/.m2/repository/io/smallrye/config/smallrye-config/3.8.3/smallrye-config-3.8.3.jar:/home/chandan/.m2/repository/io/smallrye/config/smallrye-config-core/3.8.3/smallrye-config-core-3.8.3.jar:/home/chandan/.m2/repository/org/eclipse/microprofile/config/microprofile-config-api/3.1/microprofile-config-api-3.1.jar:/home/chandan/.m2/repository/io/smallrye/common/smallrye-common-classloader/2.3.0/smallrye-common-classloader-2.3.0.jar:/home/chandan/.m2/repository/io/smallrye/config/smallrye-config-common/3.8.3/smallrye-config-common-3.8.3.jar:/home/chandan/.m2/repository/org/jboss/logmanager/jboss-logmanager/3.0.6.Final/jboss-logmanager-3.0.6.Final.jar:/home/chandan/.m2/repository/io/smallrye/common/smallrye-common-constraint/2.3.0/smallrye-common-constraint-2.3.0.jar:/home/chandan/.m2/repository/io/smallrye/common/smallrye-common-cpu/2.3.0/smallrye-common-cpu-2.3.0.jar:/home/chandan/.m2/repository/io/smallrye/common/smallrye-common-expression/2.3.0/smallrye-common-expression-2.3.0.jar:/home/chandan/.m2/repository/io/smallrye/common/smallrye-common-function/2.3.0/smallrye-common-function-2.3.0.jar:/home/chandan/.m2/repository/io/smallrye/common/smallrye-common-net/2.3.0/smallrye-common-net-2.3.0.jar:/home/chandan/.m2/repository/io/smallrye/common/smallrye-common-ref/2.3.0/smallrye-common-ref-2.3.0.jar:/home/chandan/.m2/repository/jakarta/json/jakarta.json-api/2.1.3/jakarta.json-api-2.1.3.jar:/home/chandan/.m2/repository/org/jboss/logging/jboss-logging-annotations/2.2.1.Final/jboss-logging-annotations-2.2.1.Final.jar:/home/chandan/.m2/repository/org/jboss/threads/jboss-threads/3.6.1.Final/jboss-threads-3.6.1.Final.jar:/home/chandan/.m2/repository/org/jboss/slf4j/slf4j-jboss-logmanager/2.0.0.Final/slf4j-jboss-logmanager-2.0.0.Final.jar:/home/chandan/.m2/repository/org/wildfly/common/wildfly-common/1.7.0.Final/wildfly-common-1.7.0.Final.jar:/home/chandan/.m2/repository/io/quarkus/quarkus-bootstrap-runner/3.12.3/quarkus-bootstrap-runner-3.12.3.jar:/home/chandan/.m2/repository/io/quarkus/quarkus-fs-util/0.0.10/quarkus-fs-util-0.0.10.jar:/home/chandan/.m2/repository/org/eclipse/microprofile/context-propagation/microprofile-context-propagation-api/1.3/microprofile-context-propagation-api-1.3.jar:/home/chandan/.m2/repository/io/quarkus/quarkus-junit5/3.12.3/quarkus-junit5-3.12.3.jar:/home/chandan/.m2/repository/io/quarkus/quarkus-bootstrap-core/3.12.3/quarkus-bootstrap-core-3.12.3.jar:/home/chandan/.m2/repository/io/quarkus/quarkus-classloader-commons/3.12.3/quarkus-classloader-commons-3.12.3.jar:/home/chandan/.m2/repository/io/quarkus/quarkus-bootstrap-app-model/3.12.3/quarkus-bootstrap-app-model-3.12.3.jar:/home/chandan/.m2/repository/io/smallrye/common/smallrye-common-io/2.3.0/smallrye-common-io-2.3.0.jar:/home/chandan/.m2/repository/org/eclipse/sisu/org.eclipse.sisu.inject/0.9.0.M3/org.eclipse.sisu.inject-0.9.0.M3.jar:/home/chandan/.m2/repository/io/quarkus/quarkus-test-common/3.12.3/quarkus-test-common-3.12.3.jar:/home/chandan/.m2/repository/io/quarkus/quarkus-core-deployment/3.12.3/quarkus-core-deployment-3.12.3.jar:/home/chandan/.m2/repository/org/aesh/readline/2.6/readline-2.6.jar:/home/chandan/.m2/repository/org/fusesource/jansi/jansi/2.4.0/jansi-2.4.0.jar:/home/chandan/.m2/repository/org/aesh/aesh/2.8.2/aesh-2.8.2.jar:/home/chandan/.m2/repository/io/quarkus/gizmo/gizmo/1.8.0/gizmo-1.8.0.jar:/home/chandan/.m2/repository/org/ow2/asm/asm-util/9.7/asm-util-9.7.jar:/home/chandan/.m2/repository/org/ow2/asm/asm-analysis/9.7/asm-analysis-9.7.jar:/home/chandan/.m2/repository/io/quarkus/quarkus-hibernate-validator-spi/3.12.3/quarkus-hibernate-validator-spi-3.12.3.jar:/home/chandan/.m2/repository/io/quarkus/quarkus-class-change-agent/3.12.3/quarkus-class-change-agent-3.12.3.jar:/home/chandan/.m2/repository/io/quarkus/quarkus-devtools-utilities/3.12.3/quarkus-devtools-utilities-3.12.3.jar:/home/chandan/.m2/repository/io/quarkus/quarkus-builder/3.12.3/quarkus-builder-3.12.3.jar:/home/chandan/.m2/repository/org/graalvm/sdk/nativeimage/23.1.2/nativeimage-23.1.2.jar:/home/chandan/.m2/repository/org/graalvm/sdk/word/23.1.2/word-23.1.2.jar:/home/chandan/.m2/repository/org/junit/platform/junit-platform-launcher/1.10.2/junit-platform-launcher-1.10.2.jar:/home/chandan/.m2/repository/io/quarkus/quarkus-bootstrap-maven-resolver/3.12.3/quarkus-bootstrap-maven-resolver-3.12.3.jar:/home/chandan/.m2/repository/io/smallrye/beanbag/smallrye-beanbag-maven/1.5.2/smallrye-beanbag-maven-1.5.2.jar:/home/chandan/.m2/repository/io/smallrye/beanbag/smallrye-beanbag-sisu/1.5.2/smallrye-beanbag-sisu-1.5.2.jar:/home/chandan/.m2/repository/io/smallrye/beanbag/smallrye-beanbag/1.5.2/smallrye-beanbag-1.5.2.jar:/home/chandan/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar:/home/chandan/.m2/repository/org/apache/maven/maven-artifact/3.9.8/maven-artifact-3.9.8.jar:/home/chandan/.m2/repository/org/apache/maven/maven-builder-support/3.9.8/maven-builder-support-3.9.8.jar:/home/chandan/.m2/repository/org/apache/maven/maven-model/3.9.8/maven-model-3.9.8.jar:/home/chandan/.m2/repository/org/apache/maven/maven-model-builder/3.9.8/maven-model-builder-3.9.8.jar:/home/chandan/.m2/repository/org/apache/maven/maven-repository-metadata/3.9.8/maven-repository-metadata-3.9.8.jar:/home/chandan/.m2/repository/org/apache/maven/maven-settings/3.9.8/maven-settings-3.9.8.jar:/home/chandan/.m2/repository/org/apache/maven/resolver/maven-resolver-api/1.9.20/maven-resolver-api-1.9.20.jar:/home/chandan/.m2/repository/org/apache/maven/resolver/maven-resolver-impl/1.9.20/maven-resolver-impl-1.9.20.jar:/home/chandan/.m2/repository/org/apache/maven/resolver/maven-resolver-named-locks/1.9.20/maven-resolver-named-locks-1.9.20.jar:/home/chandan/.m2/repository/org/apache/maven/resolver/maven-resolver-spi/1.9.20/maven-resolver-spi-1.9.20.jar:/home/chandan/.m2/repository/org/apache/maven/resolver/maven-resolver-util/1.9.20/maven-resolver-util-1.9.20.jar:/home/chandan/.m2/repository/org/apache/maven/resolver/maven-resolver-transport-http/1.9.20/maven-resolver-transport-http-1.9.20.jar:/home/chandan/.m2/repository/org/apache/maven/wagon/wagon-provider-api/3.5.3/wagon-provider-api-3.5.3.jar:/home/chandan/.m2/repository/org/apache/maven/wagon/wagon-http-shared/3.5.3/wagon-http-shared-3.5.3.jar:/home/chandan/.m2/repository/org/codehaus/plexus/plexus-interpolation/1.26/plexus-interpolation-1.26.jar:/home/chandan/.m2/repository/org/codehaus/plexus/plexus-utils/3.5.1/plexus-utils-3.5.1.jar:/home/chandan/.m2/repository/org/codehaus/plexus/plexus-xml/4.0.1/plexus-xml-4.0.1.jar:/home/chandan/.m2/repository/org/apache/maven/maven-xml-impl/4.0.0-alpha-5/maven-xml-impl-4.0.0-alpha-5.jar:/home/chandan/.m2/repository/org/apache/maven/maven-api-xml/4.0.0-alpha-5/maven-api-xml-4.0.0-alpha-5.jar:/home/chandan/.m2/repository/org/apache/maven/maven-api-meta/4.0.0-alpha-5/maven-api-meta-4.0.0-alpha-5.jar:/home/chandan/.m2/repository/org/codehaus/plexus/plexus-cipher/2.0/plexus-cipher-2.0.jar:/home/chandan/.m2/repository/org/codehaus/plexus/plexus-sec-dispatcher/2.0/plexus-sec-dispatcher-2.0.jar:/home/chandan/.m2/repository/org/apache/maven/maven-embedder/3.9.8/maven-embedder-3.9.8.jar:/home/chandan/.m2/repository/org/apache/maven/maven-core/3.9.8/maven-core-3.9.8.jar:/home/chandan/.m2/repository/org/codehaus/plexus/plexus-component-annotations/2.1.0/plexus-component-annotations-2.1.0.jar:/home/chandan/.m2/repository/org/apache/maven/maven-plugin-api/3.9.8/maven-plugin-api-3.9.8.jar:/home/chandan/.m2/repository/org/apache/maven/shared/maven-shared-utils/3.4.2/maven-shared-utils-3.4.2.jar:/home/chandan/.m2/repository/com/google/inject/guice/5.1.0/guice-5.1.0.jar:/home/chandan/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/home/chandan/.m2/repository/javax/annotation/javax.annotation-api/1.3.2/javax.annotation-api-1.3.2.jar:/home/chandan/.m2/repository/org/codehaus/plexus/plexus-classworlds/2.6.0/plexus-classworlds-2.6.0.jar:/home/chandan/.m2/repository/commons-cli/commons-cli/1.8.0/commons-cli-1.8.0.jar:/home/chandan/.m2/repository/org/eclipse/sisu/org.eclipse.sisu.plexus/0.9.0.M3/org.eclipse.sisu.plexus-0.9.0.M3.jar:/home/chandan/.m2/repository/org/apache/maven/maven-settings-builder/3.9.8/maven-settings-builder-3.9.8.jar:/home/chandan/.m2/repository/org/apache/maven/maven-resolver-provider/3.9.8/maven-resolver-provider-3.9.8.jar:/home/chandan/.m2/repository/org/apache/maven/resolver/maven-resolver-connector-basic/1.9.20/maven-resolver-connector-basic-1.9.20.jar:/home/chandan/.m2/repository/org/apache/maven/resolver/maven-resolver-transport-wagon/1.9.20/maven-resolver-transport-wagon-1.9.20.jar:/home/chandan/.m2/repository/org/apache/maven/wagon/wagon-http/3.5.3/wagon-http-3.5.3.jar:/home/chandan/.m2/repository/org/apache/maven/wagon/wagon-file/3.5.3/wagon-file-3.5.3.jar:/home/chandan/.m2/repository/io/quarkus/quarkus-bootstrap-gradle-resolver/3.12.3/quarkus-bootstrap-gradle-resolver-3.12.3.jar:/home/chandan/.m2/repository/io/smallrye/jandex/3.2.0/jandex-3.2.0.jar:/home/chandan/.m2/repository/commons-io/commons-io/2.16.1/commons-io-2.16.1.jar:/home/chandan/.m2/repository/io/quarkus/quarkus-junit5-properties/3.12.3/quarkus-junit5-properties-3.12.3.jar:/home/chandan/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.2/junit-jupiter-5.10.2.jar:/home/chandan/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.2/junit-jupiter-params-5.10.2.jar:/home/chandan/.m2/repository/com/thoughtworks/xstream/xstream/1.4.20/xstream-1.4.20.jar:/home/chandan/.m2/repository/io/github/x-stream/mxparser/1.2.2/mxparser-1.2.2.jar:/home/chandan/.m2/repository/xmlpull/xmlpull/1.1.3.1/xmlpull-1.1.3.1.jar:/home/chandan/.m2/repository/org/apache/directory/api/api-all/2.1.0/api-all-2.1.0.jar:/home/chandan/.m2/repository/org/slf4j/slf4j-api/2.0.6/slf4j-api-2.0.6.jar:/home/chandan/.m2/repository/org/apache/servicemix/bundles/org.apache.servicemix.bundles.xpp3/1.1.4c_7/org.apache.servicemix.bundles.xpp3-1.1.4c_7.jar:/home/chandan/.m2/repository/org/apache/servicemix/bundles/org.apache.servicemix.bundles.dom4j/2.1.3_1/org.apache.servicemix.bundles.dom4j-2.1.3_1.jar:/home/chandan/.m2/repository/org/apache/commons/commons-pool2/2.9.0/commons-pool2-2.9.0.jar:/home/chandan/.m2/repository/org/apache/mina/mina-core/2.1.3/mina-core-2.1.3.jar:/home/chandan/.m2/repository/org/apache/commons/commons-lang3/3.14.0/commons-lang3-3.14.0.jar:/home/chandan/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/home/chandan/.m2/repository/org/apache/servicemix/bundles/org.apache.servicemix.bundles.antlr/2.7.7_5/org.apache.servicemix.bundles.antlr-2.7.7_5.jar:/home/chandan/.m2/repository/commons-codec/commons-codec/1.17.0/commons-codec-1.17.0.jar:/home/chandan/.m2/repository/org/projectlombok/lombok/1.18.32/lombok-1.18.32.jar:/home/chandan/.m2/repository/io/quarkus/quarkus-jacoco/3.12.3/quarkus-jacoco-3.12.3.jar:/home/chandan/.m2/repository/org/jacoco/org.jacoco.core/0.8.12/org.jacoco.core-0.8.12.jar:/home/chandan/.m2/repository/org/ow2/asm/asm/9.7/asm-9.7.jar:/home/chandan/.m2/repository/org/ow2/asm/asm-tree/9.7/asm-tree-9.7.jar:/home/chandan/.m2/repository/org/jacoco/org.jacoco.report/0.8.12/org.jacoco.report-0.8.12.jar:/home/chandan/.m2/repository/org/jacoco/org.jacoco.agent/0.8.12/org.jacoco.agent-0.8.12.jar:/home/chandan/.m2/repository/org/jacoco/org.jacoco.agent/0.8.12/org.jacoco.agent-0.8.12-runtime.jar:/home/chandan/.m2/repository/org/ow2/asm/asm-commons/9.7/asm-commons-9.7.jar:/home/chandan/.m2/repository/com/unboundid/unboundid-ldapsdk/4.0.9/unboundid-ldapsdk-4.0.9.jar:/home/chandan/.m2/repository/org/zapodot/embedded-ldap-junit/0.9.0/embedded-ldap-junit-0.9.0.jar:/home/chandan/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/home/chandan/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/chandan/.m2/repository/com/google/guava/guava/33.2.1-jre/guava-33.2.1-jre.jar:/home/chandan/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/home/chandan/.m2/repository/org/checkerframework/checker-qual/3.44.0/checker-qual-3.44.0.jar:/home/chandan/.m2/repository/com/google/errorprone/error_prone_annotations/2.28.0/error_prone_annotations-2.28.0.jar:/home/chandan/.m2/repository/com/google/j2objc/j2objc-annotations/2.8/j2objc-annotations-2.8.jar:/home/chandan/.m2/repository/net/bytebuddy/byte-buddy/1.14.15/byte-buddy-1.14.15.jar:/home/chandan/.m2/repository/org/mockito/mockito-core/5.12.0/mockito-core-5.12.0.jar:/home/chandan/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.15/byte-buddy-agent-1.14.15.jar:/home/chandan/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/home/chandan/.m2/repository/org/mockito/mockito-junit-jupiter/5.12.0/mockito-junit-jupiter-5.12.0.jar:/home/chandan/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/home/chandan/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/chandan/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/home/chandan/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/home/chandan/.m2/repository/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar:/home/chandan/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/chandan/.m2/repository/io/rest-assured/rest-assured/5.4.0/rest-assured-5.4.0.jar:/home/chandan/.m2/repository/org/apache/groovy/groovy/4.0.16/groovy-4.0.16.jar:/home/chandan/.m2/repository/org/apache/groovy/groovy-xml/4.0.16/groovy-xml-4.0.16.jar:/home/chandan/.m2/repository/org/apache/httpcomponents/httpclient/4.5.14/httpclient-4.5.14.jar:/home/chandan/.m2/repository/org/apache/httpcomponents/httpcore/4.4.16/httpcore-4.4.16.jar:/home/chandan/.m2/repository/org/apache/httpcomponents/httpmime/4.5.14/httpmime-4.5.14.jar:/home/chandan/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/home/chandan/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/home/chandan/.m2/repository/io/rest-assured/json-path/5.4.0/json-path-5.4.0.jar:/home/chandan/.m2/repository/org/apache/groovy/groovy-json/4.0.16/groovy-json-4.0.16.jar:/home/chandan/.m2/repository/io/rest-assured/rest-assured-common/5.4.0/rest-assured-common-5.4.0.jar:/home/chandan/.m2/repository/io/rest-assured/xml-path/5.4.0/xml-path-5.4.0.jar:"/>
@@ -36,7 +36,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="surefire.real.class.path" value="/home/chandan/Desktop/ldapApi/crud-2-api/LDAPapi/target/surefire/surefirebooter-20240727020627195_3.jar"/>
+    <property name="surefire.real.class.path" value="/home/chandan/Desktop/ldapApi/crud-2-api/LDAPapi/target/surefire/surefirebooter-20240729135501321_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.11+9-Ubuntu-1"/>
     <property name="user.name" value="chandan"/>
@@ -63,88 +63,489 @@
     <property name="vertx.disableTCCL" value="true"/>
     <property name="java.vm.version" value="17.0.11+9-Ubuntu-1"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
-    <property name="io.netty.machineId" value="bb:00:32:14:67:36:e3:c7"/>
+    <property name="io.netty.machineId" value="59:8d:39:ac:6c:92:a1:e5"/>
     <property name="java.class.version" value="61.0"/>
     <property name="jacoco-agent.destfile" value="/home/chandan/Desktop/ldapApi/crud-2-api/LDAPapi/target/jacoco-quarkus.exec"/>
   </properties>
-  <testcase name="addEntryToDatabaseTest" classname="com.example.serviceImpltest.serviceunitTest" time="0.952">
-    <system-out><![CDATA[2024-07-27 02:06:38,938 WARN  [org.jbo.res.rea.com.pro.EndpointIndexer] (build-12) Using a body parameter with jakarta.ws.rs.GET is strongly discouraged. Offending method is 'Service.service#jakarta.ws.rs.core.Response searchEntry(java.util.Map<java.lang.String, java.lang.String> searchCriteria)'
-2024-07-27 02:06:38,982 WARN  [org.jbo.res.rea.com.pro.EndpointIndexer] (build-34) Using a body parameter with jakarta.ws.rs.GET is strongly discouraged. Offending method is 'Service.service#jakarta.ws.rs.core.Response searchEntry(java.util.Map<java.lang.String, java.lang.String> searchCriteria)'
-2024-07-27 02:06:43,273 INFO  [io.quarkus] (main) LDAPapi 1.0.0-SNAPSHOT on JVM (powered by Quarkus 3.12.3) started in 10.265s. Listening on: http://localhost:8081
-2024-07-27 02:06:43,275 INFO  [io.quarkus] (main) Profile test activated. 
-2024-07-27 02:06:43,276 INFO  [io.quarkus] (main) Installed features: [cdi, jacoco, rest, rest-client, rest-client-jackson, rest-jackson, smallrye-context-propagation, vertx]
-2024-07-27 02:06:43,635 INFO  [com.exa.Ext.DummyLdapServer] (main) LDAP server starting...
-2024-07-27 02:06:43,645 INFO  [com.exa.Ext.DummyLdapServer] (main) LDAP server started. Listen on port 12000
-trancategory===This is a sample transaction category
-uniqueMember===cn=Directory Manager
-Description===This is a sample transaction category
-2024-07-27 02:06:46,383 INFO  [org.apa.dir.api.lda.cod.osg.DefaultLdapCodecService] (main) MSG_06000_REGISTERED_CONTROL_FACTORY (1.3.6.1.4.1.18060.0.0.1)
-2024-07-27 02:06:46,384 INFO  [org.apa.dir.api.lda.cod.osg.DefaultLdapCodecService] (main) MSG_06000_REGISTERED_CONTROL_FACTORY (2.16.840.1.113730.3.4.7)
-2024-07-27 02:06:46,386 INFO  [org.apa.dir.api.lda.cod.osg.DefaultLdapCodecService] (main) MSG_06000_REGISTERED_CONTROL_FACTORY (2.16.840.1.113730.3.4.2)
-2024-07-27 02:06:46,387 INFO  [org.apa.dir.api.lda.cod.osg.DefaultLdapCodecService] (main) MSG_06000_REGISTERED_CONTROL_FACTORY (1.2.840.113556.1.4.319)
-2024-07-27 02:06:46,388 INFO  [org.apa.dir.api.lda.cod.osg.DefaultLdapCodecService] (main) MSG_06000_REGISTERED_CONTROL_FACTORY (2.16.840.1.113730.3.4.3)
-2024-07-27 02:06:46,390 INFO  [org.apa.dir.api.lda.cod.osg.DefaultLdapCodecService] (main) MSG_06000_REGISTERED_CONTROL_FACTORY (2.16.840.1.113730.3.4.18)
-2024-07-27 02:06:46,391 INFO  [org.apa.dir.api.lda.cod.osg.DefaultLdapCodecService] (main) MSG_06000_REGISTERED_CONTROL_FACTORY (1.2.840.113556.1.4.473)
-2024-07-27 02:06:46,392 INFO  [org.apa.dir.api.lda.cod.osg.DefaultLdapCodecService] (main) MSG_06000_REGISTERED_CONTROL_FACTORY (1.2.840.113556.1.4.474)
-2024-07-27 02:06:46,394 INFO  [org.apa.dir.api.lda.cod.osg.DefaultLdapCodecService] (main) MSG_06000_REGISTERED_CONTROL_FACTORY (1.3.6.1.4.1.4203.1.10.1)
-2024-07-27 02:06:46,395 INFO  [org.apa.dir.api.lda.cod.StockCodecFactoryUtil] (main) MSG_06000_REGISTERED_CONTROL_FACTORY (1.3.6.1.4.1.18060.0.0.1)
-2024-07-27 02:06:46,395 INFO  [org.apa.dir.api.lda.cod.StockCodecFactoryUtil] (main) MSG_06000_REGISTERED_CONTROL_FACTORY (2.16.840.1.113730.3.4.7)
-2024-07-27 02:06:46,395 INFO  [org.apa.dir.api.lda.cod.StockCodecFactoryUtil] (main) MSG_06000_REGISTERED_CONTROL_FACTORY (2.16.840.1.113730.3.4.2)
-2024-07-27 02:06:46,396 INFO  [org.apa.dir.api.lda.cod.StockCodecFactoryUtil] (main) MSG_06000_REGISTERED_CONTROL_FACTORY (1.2.840.113556.1.4.319)
-2024-07-27 02:06:46,396 INFO  [org.apa.dir.api.lda.cod.StockCodecFactoryUtil] (main) MSG_06000_REGISTERED_CONTROL_FACTORY (2.16.840.1.113730.3.4.3)
-2024-07-27 02:06:46,396 INFO  [org.apa.dir.api.lda.cod.StockCodecFactoryUtil] (main) MSG_06000_REGISTERED_CONTROL_FACTORY (2.16.840.1.113730.3.4.18)
-2024-07-27 02:06:46,397 INFO  [org.apa.dir.api.lda.cod.StockCodecFactoryUtil] (main) MSG_06000_REGISTERED_CONTROL_FACTORY (1.2.840.113556.1.4.473)
-2024-07-27 02:06:46,397 INFO  [org.apa.dir.api.lda.cod.StockCodecFactoryUtil] (main) MSG_06000_REGISTERED_CONTROL_FACTORY (1.2.840.113556.1.4.474)
-2024-07-27 02:06:46,398 INFO  [org.apa.dir.api.lda.cod.StockCodecFactoryUtil] (main) MSG_06000_REGISTERED_CONTROL_FACTORY (1.3.6.1.4.1.4203.1.10.1)
-2024-07-27 02:06:46,400 INFO  [org.apa.dir.api.lda.ext.ExtrasCodecFactoryUtil] (main) MSG_06000_REGISTERED_CONTROL_FACTORY (1.2.840.113556.1.4.841)
-2024-07-27 02:06:46,400 INFO  [org.apa.dir.api.lda.ext.ExtrasCodecFactoryUtil] (main) MSG_06000_REGISTERED_CONTROL_FACTORY (1.2.840.113556.1.4.841)
-2024-07-27 02:06:46,401 INFO  [org.apa.dir.api.lda.ext.ExtrasCodecFactoryUtil] (main) MSG_06000_REGISTERED_CONTROL_FACTORY (1.2.840.113556.1.4.2239)
-2024-07-27 02:06:46,403 INFO  [org.apa.dir.api.lda.ext.ExtrasCodecFactoryUtil] (main) MSG_06000_REGISTERED_CONTROL_FACTORY (1.2.840.113556.1.4.417)
-2024-07-27 02:06:46,404 INFO  [org.apa.dir.api.lda.ext.ExtrasCodecFactoryUtil] (main) MSG_06000_REGISTERED_CONTROL_FACTORY (1.2.840.113556.1.4.528)
-2024-07-27 02:06:46,404 INFO  [org.apa.dir.api.lda.ext.ExtrasCodecFactoryUtil] (main) MSG_06000_REGISTERED_CONTROL_FACTORY (2.16.840.1.113730.3.4.4)
-2024-07-27 02:06:46,405 INFO  [org.apa.dir.api.lda.ext.ExtrasCodecFactoryUtil] (main) MSG_06000_REGISTERED_CONTROL_FACTORY (1.3.6.1.4.1.42.2.27.8.5.1)
-2024-07-27 02:06:46,406 INFO  [org.apa.dir.api.lda.ext.ExtrasCodecFactoryUtil] (main) MSG_06000_REGISTERED_CONTROL_FACTORY (1.3.6.1.4.1.42.2.27.8.5.1)
-2024-07-27 02:06:46,407 INFO  [org.apa.dir.api.lda.ext.ExtrasCodecFactoryUtil] (main) MSG_06000_REGISTERED_CONTROL_FACTORY (1.2.840.113556.1.4.1413)
-2024-07-27 02:06:46,408 INFO  [org.apa.dir.api.lda.ext.ExtrasCodecFactoryUtil] (main) MSG_06000_REGISTERED_CONTROL_FACTORY (1.3.6.1.4.1.4203.1.9.1.3)
-2024-07-27 02:06:46,410 INFO  [org.apa.dir.api.lda.ext.ExtrasCodecFactoryUtil] (main) MSG_06000_REGISTERED_CONTROL_FACTORY (1.3.6.1.4.1.4203.1.9.1.1)
-2024-07-27 02:06:46,411 INFO  [org.apa.dir.api.lda.ext.ExtrasCodecFactoryUtil] (main) MSG_06000_REGISTERED_CONTROL_FACTORY (1.3.6.1.4.1.4203.1.9.1.2)
-2024-07-27 02:06:46,412 INFO  [org.apa.dir.api.lda.ext.ExtrasCodecFactoryUtil] (main) MSG_06000_REGISTERED_CONTROL_FACTORY (1.3.6.1.1.21.2)
-2024-07-27 02:06:46,413 INFO  [org.apa.dir.api.lda.ext.ExtrasCodecFactoryUtil] (main) MSG_06000_REGISTERED_CONTROL_FACTORY (2.16.840.1.113730.3.4.9)
-2024-07-27 02:06:46,414 INFO  [org.apa.dir.api.lda.ext.ExtrasCodecFactoryUtil] (main) MSG_06000_REGISTERED_CONTROL_FACTORY (2.16.840.1.113730.3.4.10)
-2024-07-27 02:06:46,415 INFO  [org.apa.dir.api.lda.ext.ExtrasCodecFactoryUtil] (main) MSG_06000_REGISTERED_CONTROL_FACTORY (1.3.6.1.4.1.4203.666.5.12)
-2024-07-27 02:06:46,417 INFO  [org.apa.dir.api.lda.ext.ExtrasCodecFactoryUtil] (main) MSG_06001_REGISTERED_EXTENDED_OP_FACTORY (1.3.6.1.1.8)
-2024-07-27 02:06:46,419 INFO  [org.apa.dir.api.lda.ext.ExtrasCodecFactoryUtil] (main) MSG_06001_REGISTERED_EXTENDED_OP_FACTORY (1.3.6.1.4.1.18060.0.1.8)
-2024-07-27 02:06:46,421 INFO  [org.apa.dir.api.lda.ext.ExtrasCodecFactoryUtil] (main) MSG_06001_REGISTERED_EXTENDED_OP_FACTORY (1.3.6.1.1.21.3)
-2024-07-27 02:06:46,422 INFO  [org.apa.dir.api.lda.ext.ExtrasCodecFactoryUtil] (main) MSG_06001_REGISTERED_EXTENDED_OP_FACTORY (1.3.6.1.4.1.18060.0.1.5)
-2024-07-27 02:06:46,423 INFO  [org.apa.dir.api.lda.ext.ExtrasCodecFactoryUtil] (main) MSG_06001_REGISTERED_EXTENDED_OP_FACTORY (1.3.6.1.4.1.18060.0.1.3)
-2024-07-27 02:06:46,424 INFO  [org.apa.dir.api.lda.ext.ExtrasCodecFactoryUtil] (main) MSG_06001_REGISTERED_EXTENDED_OP_FACTORY (1.3.6.1.4.1.1466.20036)
-2024-07-27 02:06:46,425 INFO  [org.apa.dir.api.lda.ext.ExtrasCodecFactoryUtil] (main) MSG_06001_REGISTERED_EXTENDED_OP_FACTORY (1.3.6.1.4.1.4203.1.11.1)
-2024-07-27 02:06:46,426 INFO  [org.apa.dir.api.lda.ext.ExtrasCodecFactoryUtil] (main) MSG_06001_REGISTERED_EXTENDED_OP_FACTORY (1.3.6.1.4.1.1466.20037)
-2024-07-27 02:06:46,428 INFO  [org.apa.dir.api.lda.ext.ExtrasCodecFactoryUtil] (main) MSG_06001_REGISTERED_EXTENDED_OP_FACTORY (1.3.6.1.1.21.1)
-2024-07-27 02:06:46,430 INFO  [org.apa.dir.api.lda.ext.ExtrasCodecFactoryUtil] (main) MSG_06001_REGISTERED_EXTENDED_OP_FACTORY (1.3.6.1.4.1.18060.0.1.6)
-2024-07-27 02:06:46,432 INFO  [org.apa.dir.api.lda.ext.ExtrasCodecFactoryUtil] (main) MSG_06001_REGISTERED_EXTENDED_OP_FACTORY (1.3.6.1.4.1.4203.1.11.3)
-2024-07-27 02:06:46,434 INFO  [org.apa.dir.api.lda.ext.ExtrasCodecFactoryUtil] (main) MSG_06002_REGISTERED_INTERMEDIATE_FACTORY (1.3.6.1.4.1.4203.1.9.1.4)
---------------tcl---------cn=Directory Manager
+  <testcase name="addEntryToDatabaseTest" classname="com.example.serviceImpltest.serviceunitTest" time="1.345">
+    <system-out><![CDATA[2024-07-29 13:55:07,416 WARN  [org.jbo.res.rea.com.pro.EndpointIndexer] (build-36) Using a body parameter with jakarta.ws.rs.GET is strongly discouraged. Offending method is 'Service.service#jakarta.ws.rs.core.Response searchEntry(java.util.Map<java.lang.String, java.lang.String> searchCriteria)'
+2024-07-29 13:55:07,446 WARN  [org.jbo.res.rea.com.pro.EndpointIndexer] (build-64) Using a body parameter with jakarta.ws.rs.GET is strongly discouraged. Offending method is 'Service.service#jakarta.ws.rs.core.Response searchEntry(java.util.Map<java.lang.String, java.lang.String> searchCriteria)'
+2024-07-29 13:55:09,717 INFO  [io.quarkus] (main) LDAPapi 1.0.0-SNAPSHOT on JVM (powered by Quarkus 3.12.3) started in 5.463s. Listening on: http://localhost:8081
+2024-07-29 13:55:09,718 INFO  [io.quarkus] (main) Profile test activated. 
+2024-07-29 13:55:09,719 INFO  [io.quarkus] (main) Installed features: [cdi, jacoco, rest, rest-client, rest-client-jackson, rest-jackson, smallrye-context-propagation, vertx]
+2024-07-29 13:55:09,901 INFO  [com.exa.Ext.DummyLdapServer] (main) LDAP server starting...
+2024-07-29 13:55:09,905 INFO  [com.exa.Ext.DummyLdapServer] (main) LDAP server started. Listen on port 12000
+2024-07-29 13:55:12,800 INFO  [org.apa.dir.api.lda.cod.osg.DefaultLdapCodecService] (main) MSG_06000_REGISTERED_CONTROL_FACTORY (1.3.6.1.4.1.18060.0.0.1)
+2024-07-29 13:55:12,801 INFO  [org.apa.dir.api.lda.cod.osg.DefaultLdapCodecService] (main) MSG_06000_REGISTERED_CONTROL_FACTORY (2.16.840.1.113730.3.4.7)
+2024-07-29 13:55:12,802 INFO  [org.apa.dir.api.lda.cod.osg.DefaultLdapCodecService] (main) MSG_06000_REGISTERED_CONTROL_FACTORY (2.16.840.1.113730.3.4.2)
+2024-07-29 13:55:12,803 INFO  [org.apa.dir.api.lda.cod.osg.DefaultLdapCodecService] (main) MSG_06000_REGISTERED_CONTROL_FACTORY (1.2.840.113556.1.4.319)
+2024-07-29 13:55:12,805 INFO  [org.apa.dir.api.lda.cod.osg.DefaultLdapCodecService] (main) MSG_06000_REGISTERED_CONTROL_FACTORY (2.16.840.1.113730.3.4.3)
+2024-07-29 13:55:12,806 INFO  [org.apa.dir.api.lda.cod.osg.DefaultLdapCodecService] (main) MSG_06000_REGISTERED_CONTROL_FACTORY (2.16.840.1.113730.3.4.18)
+2024-07-29 13:55:12,807 INFO  [org.apa.dir.api.lda.cod.osg.DefaultLdapCodecService] (main) MSG_06000_REGISTERED_CONTROL_FACTORY (1.2.840.113556.1.4.473)
+2024-07-29 13:55:12,809 INFO  [org.apa.dir.api.lda.cod.osg.DefaultLdapCodecService] (main) MSG_06000_REGISTERED_CONTROL_FACTORY (1.2.840.113556.1.4.474)
+2024-07-29 13:55:12,811 INFO  [org.apa.dir.api.lda.cod.osg.DefaultLdapCodecService] (main) MSG_06000_REGISTERED_CONTROL_FACTORY (1.3.6.1.4.1.4203.1.10.1)
+2024-07-29 13:55:12,812 INFO  [org.apa.dir.api.lda.cod.StockCodecFactoryUtil] (main) MSG_06000_REGISTERED_CONTROL_FACTORY (1.3.6.1.4.1.18060.0.0.1)
+2024-07-29 13:55:12,813 INFO  [org.apa.dir.api.lda.cod.StockCodecFactoryUtil] (main) MSG_06000_REGISTERED_CONTROL_FACTORY (2.16.840.1.113730.3.4.7)
+2024-07-29 13:55:12,813 INFO  [org.apa.dir.api.lda.cod.StockCodecFactoryUtil] (main) MSG_06000_REGISTERED_CONTROL_FACTORY (2.16.840.1.113730.3.4.2)
+2024-07-29 13:55:12,813 INFO  [org.apa.dir.api.lda.cod.StockCodecFactoryUtil] (main) MSG_06000_REGISTERED_CONTROL_FACTORY (1.2.840.113556.1.4.319)
+2024-07-29 13:55:12,814 INFO  [org.apa.dir.api.lda.cod.StockCodecFactoryUtil] (main) MSG_06000_REGISTERED_CONTROL_FACTORY (2.16.840.1.113730.3.4.3)
+2024-07-29 13:55:12,814 INFO  [org.apa.dir.api.lda.cod.StockCodecFactoryUtil] (main) MSG_06000_REGISTERED_CONTROL_FACTORY (2.16.840.1.113730.3.4.18)
+2024-07-29 13:55:12,814 INFO  [org.apa.dir.api.lda.cod.StockCodecFactoryUtil] (main) MSG_06000_REGISTERED_CONTROL_FACTORY (1.2.840.113556.1.4.473)
+2024-07-29 13:55:12,814 INFO  [org.apa.dir.api.lda.cod.StockCodecFactoryUtil] (main) MSG_06000_REGISTERED_CONTROL_FACTORY (1.2.840.113556.1.4.474)
+2024-07-29 13:55:12,815 INFO  [org.apa.dir.api.lda.cod.StockCodecFactoryUtil] (main) MSG_06000_REGISTERED_CONTROL_FACTORY (1.3.6.1.4.1.4203.1.10.1)
+2024-07-29 13:55:12,818 INFO  [org.apa.dir.api.lda.ext.ExtrasCodecFactoryUtil] (main) MSG_06000_REGISTERED_CONTROL_FACTORY (1.2.840.113556.1.4.841)
+2024-07-29 13:55:12,820 INFO  [org.apa.dir.api.lda.ext.ExtrasCodecFactoryUtil] (main) MSG_06000_REGISTERED_CONTROL_FACTORY (1.2.840.113556.1.4.841)
+2024-07-29 13:55:12,820 INFO  [org.apa.dir.api.lda.ext.ExtrasCodecFactoryUtil] (main) MSG_06000_REGISTERED_CONTROL_FACTORY (1.2.840.113556.1.4.2239)
+2024-07-29 13:55:12,822 INFO  [org.apa.dir.api.lda.ext.ExtrasCodecFactoryUtil] (main) MSG_06000_REGISTERED_CONTROL_FACTORY (1.2.840.113556.1.4.417)
+2024-07-29 13:55:12,823 INFO  [org.apa.dir.api.lda.ext.ExtrasCodecFactoryUtil] (main) MSG_06000_REGISTERED_CONTROL_FACTORY (1.2.840.113556.1.4.528)
+2024-07-29 13:55:12,824 INFO  [org.apa.dir.api.lda.ext.ExtrasCodecFactoryUtil] (main) MSG_06000_REGISTERED_CONTROL_FACTORY (2.16.840.1.113730.3.4.4)
+2024-07-29 13:55:12,826 INFO  [org.apa.dir.api.lda.ext.ExtrasCodecFactoryUtil] (main) MSG_06000_REGISTERED_CONTROL_FACTORY (1.3.6.1.4.1.42.2.27.8.5.1)
+2024-07-29 13:55:12,826 INFO  [org.apa.dir.api.lda.ext.ExtrasCodecFactoryUtil] (main) MSG_06000_REGISTERED_CONTROL_FACTORY (1.3.6.1.4.1.42.2.27.8.5.1)
+2024-07-29 13:55:12,827 INFO  [org.apa.dir.api.lda.ext.ExtrasCodecFactoryUtil] (main) MSG_06000_REGISTERED_CONTROL_FACTORY (1.2.840.113556.1.4.1413)
+2024-07-29 13:55:12,828 INFO  [org.apa.dir.api.lda.ext.ExtrasCodecFactoryUtil] (main) MSG_06000_REGISTERED_CONTROL_FACTORY (1.3.6.1.4.1.4203.1.9.1.3)
+2024-07-29 13:55:12,831 INFO  [org.apa.dir.api.lda.ext.ExtrasCodecFactoryUtil] (main) MSG_06000_REGISTERED_CONTROL_FACTORY (1.3.6.1.4.1.4203.1.9.1.1)
+2024-07-29 13:55:12,832 INFO  [org.apa.dir.api.lda.ext.ExtrasCodecFactoryUtil] (main) MSG_06000_REGISTERED_CONTROL_FACTORY (1.3.6.1.4.1.4203.1.9.1.2)
+2024-07-29 13:55:12,833 INFO  [org.apa.dir.api.lda.ext.ExtrasCodecFactoryUtil] (main) MSG_06000_REGISTERED_CONTROL_FACTORY (1.3.6.1.1.21.2)
+2024-07-29 13:55:12,834 INFO  [org.apa.dir.api.lda.ext.ExtrasCodecFactoryUtil] (main) MSG_06000_REGISTERED_CONTROL_FACTORY (2.16.840.1.113730.3.4.9)
+2024-07-29 13:55:12,835 INFO  [org.apa.dir.api.lda.ext.ExtrasCodecFactoryUtil] (main) MSG_06000_REGISTERED_CONTROL_FACTORY (2.16.840.1.113730.3.4.10)
+2024-07-29 13:55:12,836 INFO  [org.apa.dir.api.lda.ext.ExtrasCodecFactoryUtil] (main) MSG_06000_REGISTERED_CONTROL_FACTORY (1.3.6.1.4.1.4203.666.5.12)
+2024-07-29 13:55:12,838 INFO  [org.apa.dir.api.lda.ext.ExtrasCodecFactoryUtil] (main) MSG_06001_REGISTERED_EXTENDED_OP_FACTORY (1.3.6.1.1.8)
+2024-07-29 13:55:12,840 INFO  [org.apa.dir.api.lda.ext.ExtrasCodecFactoryUtil] (main) MSG_06001_REGISTERED_EXTENDED_OP_FACTORY (1.3.6.1.4.1.18060.0.1.8)
+2024-07-29 13:55:12,844 INFO  [org.apa.dir.api.lda.ext.ExtrasCodecFactoryUtil] (main) MSG_06001_REGISTERED_EXTENDED_OP_FACTORY (1.3.6.1.1.21.3)
+2024-07-29 13:55:12,845 INFO  [org.apa.dir.api.lda.ext.ExtrasCodecFactoryUtil] (main) MSG_06001_REGISTERED_EXTENDED_OP_FACTORY (1.3.6.1.4.1.18060.0.1.5)
+2024-07-29 13:55:12,847 INFO  [org.apa.dir.api.lda.ext.ExtrasCodecFactoryUtil] (main) MSG_06001_REGISTERED_EXTENDED_OP_FACTORY (1.3.6.1.4.1.18060.0.1.3)
+2024-07-29 13:55:12,848 INFO  [org.apa.dir.api.lda.ext.ExtrasCodecFactoryUtil] (main) MSG_06001_REGISTERED_EXTENDED_OP_FACTORY (1.3.6.1.4.1.1466.20036)
+2024-07-29 13:55:12,850 INFO  [org.apa.dir.api.lda.ext.ExtrasCodecFactoryUtil] (main) MSG_06001_REGISTERED_EXTENDED_OP_FACTORY (1.3.6.1.4.1.4203.1.11.1)
+2024-07-29 13:55:12,851 INFO  [org.apa.dir.api.lda.ext.ExtrasCodecFactoryUtil] (main) MSG_06001_REGISTERED_EXTENDED_OP_FACTORY (1.3.6.1.4.1.1466.20037)
+2024-07-29 13:55:12,852 INFO  [org.apa.dir.api.lda.ext.ExtrasCodecFactoryUtil] (main) MSG_06001_REGISTERED_EXTENDED_OP_FACTORY (1.3.6.1.1.21.1)
+2024-07-29 13:55:12,854 INFO  [org.apa.dir.api.lda.ext.ExtrasCodecFactoryUtil] (main) MSG_06001_REGISTERED_EXTENDED_OP_FACTORY (1.3.6.1.4.1.18060.0.1.6)
+2024-07-29 13:55:12,856 INFO  [org.apa.dir.api.lda.ext.ExtrasCodecFactoryUtil] (main) MSG_06001_REGISTERED_EXTENDED_OP_FACTORY (1.3.6.1.4.1.4203.1.11.3)
+2024-07-29 13:55:12,858 INFO  [org.apa.dir.api.lda.ext.ExtrasCodecFactoryUtil] (main) MSG_06002_REGISTERED_INTERMEDIATE_FACTORY (1.3.6.1.4.1.4203.1.9.1.4)
+2024-07-29 13:55:13,043 INFO  [Dat.Connection] (main) LdapConnectionPool started.
 ]]></system-out>
   </testcase>
-  <testcase name="searchEntryTest" classname="com.example.serviceImpltest.serviceunitTest" time="0.05">
+  <testcase name="searchEntryTest" classname="com.example.serviceImpltest.serviceunitTest" time="0.045">
     <system-out><![CDATA[===============================(&(transactionGroupId=TG777777777))
-Description===This is a sample transaction category
-uniqueMember===cn=Directory Manager
-transactionGroupId===UID21212
 ]]></system-out>
   </testcase>
-  <testcase name="updateEntityTest" classname="com.example.serviceImpltest.serviceunitTest" time="0.037">
-    <system-out><![CDATA[2024-07-27 02:06:46,707 INFO  [Dat.DatabaseMethods] (main) Updating LDAP entry with DN: transactionGroupId=TG777777777,ou=tranCategory,dc=transactionCategory,dc=com
-2024-07-27 02:06:46,732 INFO  [Dat.DatabaseMethods] (main) Entry updated successfully for DN: transactionGroupId=TG777777777,ou=tranCategory,dc=transactionCategory,dc=com
+  <testcase name="updateEntityTest" classname="com.example.serviceImpltest.serviceunitTest" time="0.039">
+    <system-out><![CDATA[2024-07-29 13:55:13,324 INFO  [Dat.DatabaseMethods] (main) Updating LDAP entry with DN: transactionGroupId=TG777777777,ou=tranCategory,dc=transactionCategory,dc=com
+2024-07-29 13:55:13,360 INFO  [Dat.DatabaseMethods] (main) Entry updated successfully for DN: transactionGroupId=TG777777777,ou=tranCategory,dc=transactionCategory,dc=com
 ]]></system-out>
   </testcase>
-  <testcase name="deleteEntry" classname="com.example.serviceImpltest.serviceunitTest" time="0.026">
-    <system-out><![CDATA[2024-07-27 02:06:46,742 INFO  [Dat.DatabaseMethods] (main) Deleting LDAP entry with DN: transactionGroupId=TG777777777,ou=tranCategory,dc=transactionCategory,dc=com
-2024-07-27 02:06:46,761 INFO  [Dat.DatabaseMethods] (main) Entry deleted successfully for DN: transactionGroupId=TG777777777,ou=tranCategory,dc=transactionCategory,dc=com
-responsestatus200
-statusCode 200
-responseentityEntry deleted successfully
+  <testcase name="ModifyEntityTestWithTGID" classname="com.example.serviceImpltest.serviceunitTest" time="0.018">
+    <system-out><![CDATA[2024-07-29 13:55:13,366 INFO  [Dat.DatabaseMethods] (main) Updating LDAP entry with DN: transactionGroupId=TG777777777,ou=tranCategory,dc=transactionCategory,dc=com
+2024-07-29 13:55:13,379 WARN  [Dat.DatabaseMethods] (main) Modification of transactionGroupId is not allowed
+Entry updated successfullyModification of transactionGroupId is not allowed
+response.getStatus()400
+]]></system-out>
+  </testcase>
+  <testcase name="deleteEntry" classname="com.example.serviceImpltest.serviceunitTest" time="0.036">
+    <system-out><![CDATA[2024-07-29 13:55:13,394 INFO  [Dat.DatabaseMethods] (main) Deleting LDAP entry with DN: transactionGroupId=TG777777777,ou=tranCategory,dc=transactionCategory,dc=com
+2024-07-29 13:55:13,418 INFO  [Dat.DatabaseMethods] (main) Entry deleted successfully for DN: transactionGroupId=TG777777777,ou=tranCategory,dc=transactionCategory,dc=com
+]]></system-out>
+  </testcase>
+  <testcase name="addEntryWithNullValuesTest" classname="com.example.serviceImpltest.serviceunitTest" time="0.022">
+    <system-out><![CDATA[2024-07-29 13:55:13,435 ERROR [Dat.DatabaseMethods] (main) Error adding entries to LDAP: DatabaseConnection.DatabaseMethods$InvalidCategoryAttributeException: Some of the required attributes are missing
+	at DatabaseConnection.DatabaseMethods.validateCategoryAttributes(DatabaseMethods.java:93)
+	at DatabaseConnection.DatabaseMethods.AddEntryToDatabase(DatabaseMethods.java:68)
+	at DatabaseConnection.DatabaseMethods_ClientProxy.AddEntryToDatabase(Unknown Source)
+	at com.example.serviceImpltest.serviceunitTest.addEntryWithNullValuesTest(serviceunitTest.java:245)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.quarkus.test.junit.QuarkusTestExtension.runExtensionMethod(QuarkusTestExtension.java:1017)
+	at io.quarkus.test.junit.QuarkusTestExtension.interceptTestMethod(QuarkusTestExtension.java:831)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+]]></system-out>
+  </testcase>
+  <testcase name="modifywithIncorrectConnection" classname="com.example.serviceImpltest.serviceunitTest" time="0.011">
+    <system-out><![CDATA[2024-07-29 13:55:13,446 INFO  [Dat.DatabaseMethods] (main) Updating LDAP entry with DN: transactionGroupId=TG777777777,ou=tranCategory,dc=transactionCategory,dc=com
+2024-07-29 13:55:13,450 ERROR [Dat.DatabaseMethods] (main) Error closing LDAP cursor: org.apache.directory.ldap.client.api.exception.InvalidConnectionException: ERR_04110_CANNOT_CONNECT_TO_SERVER Cannot connect to the server: Connection refused
+	at org.apache.directory.ldap.client.api.LdapNetworkConnection.close(LdapNetworkConnection.java:781)
+	at org.apache.directory.ldap.client.api.LdapNetworkConnection.connect(LdapNetworkConnection.java:978)
+	at org.apache.directory.ldap.client.api.LdapNetworkConnection.searchAsync(LdapNetworkConnection.java:2333)
+	at org.apache.directory.ldap.client.api.LdapNetworkConnection.search(LdapNetworkConnection.java:2388)
+	at org.apache.directory.ldap.client.api.LdapNetworkConnection.search(LdapNetworkConnection.java:2255)
+	at org.apache.directory.ldap.client.api.LdapNetworkConnection.search(LdapNetworkConnection.java:2266)
+	at DatabaseConnection.DatabaseMethods.modifyEntry(DatabaseMethods.java:193)
+	at DatabaseConnection.DatabaseMethods_ClientProxy.modifyEntry(Unknown Source)
+	at Service.serviceimpl.updateEntryAttributes(serviceimpl.java:69)
+	at Service.serviceimpl_ClientProxy.updateEntryAttributes(Unknown Source)
+	at com.example.serviceImpltest.serviceunitTest.modifywithIncorrectConnection(serviceunitTest.java:294)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.quarkus.test.junit.QuarkusTestExtension.runExtensionMethod(QuarkusTestExtension.java:1017)
+	at io.quarkus.test.junit.QuarkusTestExtension.interceptTestMethod(QuarkusTestExtension.java:831)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at org.apache.mina.transport.socket.nio.NioSocketConnector.finishConnect(NioSocketConnector.java:223)
+	at org.apache.mina.transport.socket.nio.NioSocketConnector.finishConnect(NioSocketConnector.java:47)
+	at org.apache.mina.core.polling.AbstractPollingIoConnector$Connector.processConnections(AbstractPollingIoConnector.java:571)
+	at org.apache.mina.core.polling.AbstractPollingIoConnector$Connector.run(AbstractPollingIoConnector.java:456)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+]]></system-out>
+  </testcase>
+  <testcase name="deleteEntryWithIncorrectTG" classname="com.example.serviceImpltest.serviceunitTest" time="0.043">
+    <system-out><![CDATA[2024-07-29 13:55:13,466 INFO  [Dat.DatabaseMethods] (main) Deleting LDAP entry with DN: transactionGroupId=77777777,ou=tranCategory,dc=transactionCategory,dc=com
+2024-07-29 13:55:13,498 WARN  [Dat.DatabaseMethods] (main) Entry not found for transactionGroupId: 77777777
+]]></system-out>
+  </testcase>
+  <testcase name="searchEntryMethodWithIncorrectConnection" classname="com.example.serviceImpltest.serviceunitTest" time="0.01">
+    <system-out><![CDATA[===============================(&(transactionGroupId=TG777777777))
+2024-07-29 13:55:13,509 ERROR [Dat.DatabaseMethods] (main) Error searching entries in LDAP: org.apache.directory.ldap.client.api.exception.InvalidConnectionException: ERR_04110_CANNOT_CONNECT_TO_SERVER Cannot connect to the server: Connection refused
+	at org.apache.directory.ldap.client.api.LdapNetworkConnection.close(LdapNetworkConnection.java:781)
+	at org.apache.directory.ldap.client.api.LdapNetworkConnection.connect(LdapNetworkConnection.java:978)
+	at org.apache.directory.ldap.client.api.LdapNetworkConnection.searchAsync(LdapNetworkConnection.java:2333)
+	at org.apache.directory.ldap.client.api.LdapNetworkConnection.search(LdapNetworkConnection.java:2388)
+	at org.apache.directory.ldap.client.api.LdapNetworkConnection.search(LdapNetworkConnection.java:2255)
+	at org.apache.directory.ldap.client.api.LdapNetworkConnection.search(LdapNetworkConnection.java:2266)
+	at DatabaseConnection.DatabaseMethods.searchEntryMethod(DatabaseMethods.java:137)
+	at DatabaseConnection.DatabaseMethods_ClientProxy.searchEntryMethod(Unknown Source)
+	at Service.serviceimpl.searchEntry(serviceimpl.java:50)
+	at Service.serviceimpl_ClientProxy.searchEntry(Unknown Source)
+	at com.example.serviceImpltest.serviceunitTest.searchEntryMethodWithIncorrectConnection(serviceunitTest.java:275)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.quarkus.test.junit.QuarkusTestExtension.runExtensionMethod(QuarkusTestExtension.java:1017)
+	at io.quarkus.test.junit.QuarkusTestExtension.interceptTestMethod(QuarkusTestExtension.java:831)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at org.apache.mina.transport.socket.nio.NioSocketConnector.finishConnect(NioSocketConnector.java:223)
+	at org.apache.mina.transport.socket.nio.NioSocketConnector.finishConnect(NioSocketConnector.java:47)
+	at org.apache.mina.core.polling.AbstractPollingIoConnector$Connector.processConnections(AbstractPollingIoConnector.java:571)
+	at org.apache.mina.core.polling.AbstractPollingIoConnector$Connector.run(AbstractPollingIoConnector.java:456)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+]]></system-out>
+  </testcase>
+  <testcase name="searchWithWrongattribute" classname="com.example.serviceImpltest.serviceunitTest" time="0.017">
+    <system-out><![CDATA[===============================(&(traactionGroupId=777777))
+]]></system-out>
+  </testcase>
+  <testcase name="modifywithInocorrectdata" classname="com.example.serviceImpltest.serviceunitTest" time="0.011">
+    <system-out><![CDATA[2024-07-29 13:55:13,535 INFO  [Dat.DatabaseMethods] (main) Updating LDAP entry with DN: transactionGroupId=TG777777777,ou=tranCategory,dc=transactionCategory,dc=com
+2024-07-29 13:55:13,540 WARN  [Dat.DatabaseMethods] (main) Entry not found for transactionGroupId: TG777777777
+modify incorrect information status404
+]]></system-out>
+  </testcase>
+  <testcase name="deleteEntryWithIncorrectconnection" classname="com.example.serviceImpltest.serviceunitTest" time="0.01">
+    <system-out><![CDATA[2024-07-29 13:55:13,546 INFO  [Dat.DatabaseMethods] (main) Deleting LDAP entry with DN: transactionGroupId=TG777777777,ou=tranCategory,dc=transactionCategory,dc=com
+2024-07-29 13:55:13,548 ERROR [Dat.DatabaseMethods] (main) Error deleting entry from LDAP: org.apache.directory.ldap.client.api.exception.InvalidConnectionException: ERR_04110_CANNOT_CONNECT_TO_SERVER Cannot connect to the server: Connection refused
+	at org.apache.directory.ldap.client.api.LdapNetworkConnection.close(LdapNetworkConnection.java:781)
+	at org.apache.directory.ldap.client.api.LdapNetworkConnection.connect(LdapNetworkConnection.java:978)
+	at org.apache.directory.ldap.client.api.LdapNetworkConnection.searchAsync(LdapNetworkConnection.java:2333)
+	at org.apache.directory.ldap.client.api.LdapNetworkConnection.search(LdapNetworkConnection.java:2388)
+	at org.apache.directory.ldap.client.api.LdapNetworkConnection.search(LdapNetworkConnection.java:2255)
+	at org.apache.directory.ldap.client.api.LdapNetworkConnection.search(LdapNetworkConnection.java:2266)
+	at DatabaseConnection.DatabaseMethods.deleteEntry(DatabaseMethods.java:172)
+	at DatabaseConnection.DatabaseMethods_ClientProxy.deleteEntry(Unknown Source)
+	at Service.serviceimpl.deleteEntry(serviceimpl.java:58)
+	at Service.serviceimpl_ClientProxy.deleteEntry(Unknown Source)
+	at com.example.serviceImpltest.serviceunitTest.deleteEntryWithIncorrectconnection(serviceunitTest.java:258)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.quarkus.test.junit.QuarkusTestExtension.runExtensionMethod(QuarkusTestExtension.java:1017)
+	at io.quarkus.test.junit.QuarkusTestExtension.interceptTestMethod(QuarkusTestExtension.java:831)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at org.apache.mina.transport.socket.nio.NioSocketConnector.finishConnect(NioSocketConnector.java:223)
+	at org.apache.mina.transport.socket.nio.NioSocketConnector.finishConnect(NioSocketConnector.java:47)
+	at org.apache.mina.core.polling.AbstractPollingIoConnector$Connector.processConnections(AbstractPollingIoConnector.java:571)
+	at org.apache.mina.core.polling.AbstractPollingIoConnector$Connector.run(AbstractPollingIoConnector.java:456)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
 ]]></system-out>
   </testcase>
 </testsuite>
